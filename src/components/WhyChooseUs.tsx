@@ -52,15 +52,7 @@ export function WhyChooseUs() {
                   {feature.description}
                 </p>
 
-                {isLast && (
-                  <a
-                    href="/assets/ISO CERTIFICATE.pdf"
-                    download="ISO CERTIFICATE.pdf"
-                    className="mt-auto inline-flex items-center gap-2 bg-green-600 text-white px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-green-700 transition-all shadow-lg shadow-green-600/20 active:scale-95"
-                  >
-                    Download ISO
-                  </a>
-                )}
+
               </div>
             );
           })}

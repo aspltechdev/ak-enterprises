@@ -54,15 +54,15 @@ export function Header() {
       transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
       className="bg-white shadow-sm fixed top-0 left-0 w-full z-50"
     >
-      <nav className="max-w-[1440px] mx-auto px-4 py-2">
+      <nav className="max-w-[1440px] mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <button onClick={() => handleNav("home", "/")} className="flex items-center gap-2 cursor-pointer">
             <Image
               src="/assets/ak-enterprises-logo.png"
               alt="AK Enterprises Logo"
-              width={160}
-              height={60}
-              className="h-10 md:h-12 w-auto object-contain"
+              width={240}
+              height={80}
+              className="h-14 md:h-18 w-auto object-contain transition-transform hover:scale-105"
               priority
             />
           </button>

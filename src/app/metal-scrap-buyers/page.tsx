@@ -1,35 +1,32 @@
+"use client";
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CheckCircle2, ArrowRight, Building2, Anchor, Container, Layers, Blocks, Box, ShieldCheck, Factory, ClipboardList, FileText, Wrench, MessageSquare, Recycle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-    title: "Metal Scrap Buyers | Ferrous & Non-Ferrous Scrap – AK Enterprises",
-    description: "AK Enterprises buys large-scale ferrous and non-ferrous metal scrap including MS, copper, aluminium, and steel with transparent pricing.",
-};
+import { motion } from "framer-motion";
 
 export default function MetalScrapService() {
     const serviceHighlights = [
         {
-            title: "MS scrap (large quantities)",
+            title: "MS scrap",
             icon: Blocks,
         },
         {
-            title: "Copper scrap",
+            title: "Copper",
             icon: Container,
         },
         {
-            title: "Aluminium scrap",
+            title: "Aluminium",
             icon: Box,
         },
         {
-            title: "Steel scrap",
+            title: "Steel and metal",
             icon: Anchor,
         },
         {
-            title: "Structural and mixed metal scrap",
+            title: "All kinds of ferrous and non-ferrous",
             icon: Layers,
         },
     ];
@@ -77,26 +74,58 @@ export default function MetalScrapService() {
         <div className="min-h-screen font-sans bg-white">
             <Header />
 
-            <main className="pt-[64px]">
+            <main className="pt-[80px] md:pt-[100px]">
                 {/* Hero Section */}
-                <section className="relative py-10 md:py-16 lg:py-20 bg-gray-900 text-white overflow-hidden flex items-center min-h-[25vh] md:min-h-[35vh]">
+                <section className="relative min-h-[40vh] md:min-h-[60vh] flex items-end overflow-hidden bg-gray-900 pb-16 md:pb-28 pt-24">
+                    {/* Background Layer */}
                     <div className="absolute inset-0 z-0 text-center">
                         <Image
-                            src="/assets/subpages images/metallandscao.jpeg"
+                            src="/assets/metal scraps/metallandscao.jpeg"
                             alt="Industrial Metal Scrap"
                             fill
-                            className="object-cover"
+                            className="object-cover opacity-50 contrast-125"
                             priority
                         />
-                        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 via-gray-900/30 to-gray-900/60"></div>
+                        {/* Advanced Gradient Overlays */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
+
+                        {/* Decorative Blur Element */}
+                        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-green-500/20 blur-[120px] rounded-full -mr-32 -mt-32"></div>
                     </div>
-                    <div className="container mx-auto px-4 relative z-10 text-center">
-                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-black mb-4 md:mb-6 leading-tight max-w-5xl mx-auto tracking-tighter text-center">
-                            Large-Scale Metal Scrap Buyers – <span className="text-green-500">Ferrous & Non-Ferrous</span>
-                        </h1>
-                        <p className="text-base md:text-lg lg:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed text-center">
-                            AK Enterprises is a trusted buyer of bulk metal scrap, serving manufacturing units, construction sites, and factories with transparent pricing and efficient logistics.
-                        </p>
+
+                    <div className="container mx-auto px-4 relative z-10">
+                        <div className="max-w-4xl text-left">
+                            {/* Premium Badge */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6 }}
+                                className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-[10px] md:text-xs font-bold mb-6"
+                            >
+                                <ShieldCheck className="w-3.5 h-3.5" />
+                                <span className="uppercase tracking-wider">Industrial Excellence Certified</span>
+                            </motion.div>
+
+                            <motion.h1
+                                initial={{ opacity: 0, x: -25 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.8, delay: 0.2 }}
+                                className="text-3xl md:text-5xl lg:text-7xl font-black text-white leading-[1.05] tracking-tighter mb-6"
+                            >
+                                Metal Scrap & <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600">Ferrous Materials</span>
+                            </motion.h1>
+
+                            <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 0.8, delay: 0.4 }}
+                                className="text-base md:text-lg lg:text-xl text-gray-300 max-w-2xl leading-relaxed font-medium"
+                            >
+                                AK Enterprises is a trusted buyer of bulk metal scrap, serving manufacturing units, construction sites, and factories with transparent pricing.
+                            </motion.p>
+                        </div>
                     </div>
                 </section>
 
@@ -148,7 +177,7 @@ export default function MetalScrapService() {
                             <div className="w-full lg:w-1/3">
                                 <div className="relative h-64 md:h-80 lg:h-[450px] w-full max-w-md mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white group">
                                     <Image
-                                        src="/assets/subpages images/copper.jpg"
+                                        src="/assets/metal scraps/metal.jpg"
                                         alt="Industrial Metal Components"
                                         fill
                                         className="object-cover"
@@ -164,7 +193,7 @@ export default function MetalScrapService() {
                 {/* Metal Scrap Services (H2) */}
                 <section className="py-12 md:py-24 bg-gray-50 overflow-hidden">
                     <div className="container mx-auto px-4">
-                        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
+                        <div className="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-20">
                             <div className="lg:w-1/2">
                                 <h2 className="text-green-600 font-extrabold uppercase tracking-tight mb-4 text-xl md:text-2xl lg:text-3xl text-left">Metal Scrap Services</h2>
                                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 lg:mb-8 text-gray-900 text-left">

@@ -1,80 +1,97 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export function Hero() {
-  return (
-    <section id="home" className="relative min-h-[80vh] flex items-center overflow-hidden py-12">
-      <div className="absolute inset-0">
-        <motion.div
-          initial={{ scale: 1.2 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 2, ease: "easeOut" }}
-          className="absolute inset-0"
-        >
-          <Image
-            src="/assets/homepage.jpeg"
-            alt="Large-Scale Industrial Scrap Dismantling"
-            fill
-            className="object-cover"
-            priority
-            quality={100}
-            sizes="100vw"
-          />
-        </motion.div>
-        <div className="absolute inset-0 bg-black/30"></div>
-      </div>
+  const heroImages = [
+    {
+      src: "/assets/homepage/home.jpg",
+      alt: "Office Dismantling Work",
+    },
+    {
+      src: "/assets/homepage/office4.jpeg",
+      alt: "E-Waste & Scrap Management",
+    },
+    {
+      src: "/assets/homepage/home2.jpg",
+      alt: "Industrial Scrap Lifting",
+    },
+  ];
 
-      <div className="container mx-auto px-4 relative z-10 text-center">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9, y: 40 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{
-            duration: 1.2,
-            delay: 0.3,
-            ease: [0.22, 1, 0.36, 1]
-          }}
-          className="max-w-4xl mx-auto text-white"
-        >
+  return (
+    <section id="home" className="relative py-8 bg-white overflow-hidden">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center max-w-5xl mx-auto mb-8">
+          {/* Headline to match the "Your Waste Our Business" style */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-            className="text-3xl md:text-4xl lg:text-5xl mb-4 font-black leading-tight"
+            transition={{ duration: 0.8 }}
+            className="text-2xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-tight mb-3"
           >
-            Large-Scale Industrial Scrap,<br />
-            <span className="text-green-400">Handled Professionally</span>
+            Large-Scale <span className="text-green-600">Office Scrap,</span><br />
+            Dismantling & Reinstatement
           </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
-            className="text-base md:text-lg mb-6 text-gray-200 max-w-2xl mx-auto leading-relaxed"
-          >
-            AK Enterprises specializes in large-volume ferrous and non-ferrous scrap purchasing, offering safe dismantling, bulk clearance, and responsible recycling for industries and businesses.
-          </motion.p>
 
-          {/* Statistics */}
+          {/* Underline Separator */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.9, ease: "easeOut" }}
-            className="flex flex-wrap justify-center gap-6 md:gap-12 mt-6 pt-2 max-w-3xl mx-auto"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="h-1 w-20 bg-green-600 mx-auto rounded-full mb-4"
+          ></motion.div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-base text-gray-600 font-medium max-w-4xl mx-auto leading-relaxed"
           >
-            <div className="text-center group">
-              <div className="text-2xl md:text-3xl font-black mb-1 text-green-400 group-hover:scale-110 transition-transform">800+</div>
-              <div className="text-[10px] md:text-xs uppercase tracking-widest font-bold text-gray-300">Projects Completed</div>
+            Your trusted partner for comprehensive workplace transformations. We specialize in bulk office scrap buying, professional dismantling, and full site reinstatement work—ensuring a seamless transition for large corporate facilities, IT parks, and commercial spaces with zero operational disruption.
+          </motion.p>
+        </div>
+
+        {/* 3-Column Image Grid matching the reference */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-5"
+        >
+          {heroImages.map((img, index) => (
+            <div key={index} className="relative h-[180px] md:h-[250px] rounded-xl overflow-hidden shadow-lg group">
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+              {/* Dark gradient overlay at bottom for text visibility if needed later */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div className="text-center group">
-              <div className="text-2xl md:text-3xl font-black mb-1 text-green-400 group-hover:scale-110 transition-transform">600+</div>
-              <div className="text-[10px] md:text-xs uppercase tracking-widest font-bold text-gray-300">Happy Clients</div>
+          ))}
+        </motion.div>
+
+        {/* Floating Stats Strip (Optional but keeps user content) */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto border-t border-gray-200 pt-6"
+        >
+          {[
+            { label: "Projects", value: "800+" },
+            { label: "Clients", value: "600+" },
+            { label: "Team", value: "100+" },
+            { label: "Exp", value: "15 Yrs" },
+          ].map((stat, i) => (
+            <div key={i} className="text-center">
+              <div className="text-xl font-black text-gray-900">{stat.value}</div>
+              <div className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">{stat.label}</div>
             </div>
-            <div className="text-center group">
-              <div className="text-2xl md:text-3xl font-black mb-1 text-green-400 group-hover:scale-110 transition-transform">100+</div>
-              <div className="text-[10px] md:text-xs uppercase tracking-widest font-bold text-gray-300">Team Members</div>
-            </div>
-          </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>

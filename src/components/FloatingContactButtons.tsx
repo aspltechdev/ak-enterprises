@@ -4,8 +4,8 @@ import { motion } from "motion/react";
 import { Phone } from "lucide-react";
 
 export function FloatingContactButtons() {
-    const phoneNumber = "+91564826894"; // Call number
-    const whatsappNumber = "919591133004"; // WhatsApp number from user
+    const phoneNumber = "+919538438069"; // Call number
+    const whatsappNumber = "919986732481"; // WhatsApp number from user
     const message = "Hi! I'm interested in your services.";
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 

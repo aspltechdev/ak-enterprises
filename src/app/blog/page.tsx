@@ -87,7 +87,7 @@ export default function BlogPage() {
     return (
         <div className="min-h-screen font-sans bg-gray-50">
             <Header />
-            <main className="pt-[64px]">
+            <main className="pt-[80px] md:pt-[100px]">
                 {/* Hero Header */}
                 <section className="py-20 bg-green-700 text-white text-center relative overflow-hidden">
                     <div className="container mx-auto px-4 relative z-10">

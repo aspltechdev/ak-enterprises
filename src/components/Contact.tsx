@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, ChevronDown } from "lucide-react";
+import { MapPin, Phone, Mail, ChevronDown, MessageCircle } from "lucide-react";
 
 export function Contact() {
   return (
@@ -22,14 +22,27 @@ export function Contact() {
                     <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center text-white transition-transform group-hover:scale-110 flex-shrink-0">
                       <Mail className="w-5 h-5" />
                     </div>
-                    <span className="text-base md:text-lg font-bold text-gray-800 break-all">info@scarp.com</span>
+                    <span className="text-base md:text-lg font-bold text-gray-800 break-all">info@akenterprises.com</span>
                   </div>
 
                   <div className="flex items-center gap-4 group">
                     <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center text-white transition-transform group-hover:scale-110 flex-shrink-0">
                       <Phone className="w-5 h-5" />
                     </div>
-                    <span className="text-base md:text-lg font-bold text-gray-800">+91 564826894</span>
+                    <div className="flex flex-col">
+                      <span className="text-xs font-semibold text-green-600 uppercase tracking-widest">Call Us</span>
+                      <span className="text-base md:text-lg font-bold text-gray-800">+91 9538438069</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4 group">
+                    <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center text-white transition-transform group-hover:scale-110 flex-shrink-0">
+                      <MessageCircle className="w-5 h-5" />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-xs font-semibold text-green-600 uppercase tracking-widest">WhatsApp</span>
+                      <span className="text-base md:text-lg font-bold text-gray-800">+91 9986732481</span>
+                    </div>
                   </div>
 
                   <div className="flex items-start gap-4 group text-left sm:col-span-2 lg:col-span-1">
@@ -37,7 +50,7 @@ export function Contact() {
                       <MapPin className="w-5 h-5" />
                     </div>
                     <span className="text-base md:text-lg font-bold text-gray-800 leading-tight">
-                      No. 42, 2nd Main Road, Bengaluru - 560058,
+                      No 33/2 , opp to Dmart , kodichikkanahalli , Bengaluru urban - 560068 Karnataka India
                     </span>
                   </div>
                 </div>

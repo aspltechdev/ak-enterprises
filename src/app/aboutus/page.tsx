@@ -13,7 +13,7 @@ export default function AboutPage() {
     return (
         <div className="min-h-screen font-sans">
             <Header />
-            <main className="pt-[64px]">
+            <main className="pt-[80px] md:pt-[100px]">
                 {/* Banner Section */}
                 <section className="relative py-20 md:py-32 bg-gray-900 text-white text-center overflow-hidden">
                     <div className="absolute inset-0 z-0">

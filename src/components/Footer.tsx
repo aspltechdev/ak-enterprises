@@ -54,11 +54,11 @@ export function Footer() {
             <ul className="space-y-3 text-xs text-green-100 italic">
               <li className="flex items-start gap-2 justify-center md:justify-start">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>123 Industrial Avenue, Manufacturing District, City, State 12345</span>
+                <span>No 33/2 , opp to Dmart , kodichikkanahalli , bengaluru urban - 560068 karnataka india</span>
               </li>
               <li className="flex items-center gap-2 justify-center md:justify-start">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span>+91 99676 07750</span>
+                <span>+91 9538438069</span>
               </li>
               <li className="flex items-center gap-2 justify-center md:justify-start">
                 <Mail className="w-4 h-4 flex-shrink-0" />

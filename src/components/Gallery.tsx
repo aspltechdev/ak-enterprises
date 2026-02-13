@@ -2,16 +2,8 @@ import Image from "next/image";
 
 export function Gallery() {
   const images = [
-    // Subpages Images
-    "/assets/subpages images/aluminimumsubpage.jpeg",
-    "/assets/subpages images/copper.jpg",
-    "/assets/subpages images/metallandscao.jpeg",
-    "/assets/subpages images/office-dismantling-service.jpg",
-    "/assets/subpages images/wirescrap.jpg",
-    "/assets/subpages images/woodlanscap.jpeg",
-    "/assets/subpages images/acscraps.jpg",
-
-    // Gallery Images
+    "/assets/hero_industrial.png",
+    // Gallery Items
     "/assets/gallery/aluminium scrap.jpg.jpeg",
     "/assets/gallery/aluminium scrap2.jfif.jpeg",
     "/assets/gallery/copper scrap2.jfif.jpeg",
@@ -19,24 +11,45 @@ export function Gallery() {
     "/assets/gallery/wire.jpg.jpeg",
     "/assets/gallery/wire2.jfif.jpeg",
 
-    // Services Images
-    "/assets/services/electrical.jpg",
-    "/assets/services/gas.jpeg",
-    "/assets/services/gas2.jpeg",
-    "/assets/services/gas3.jpeg",
-    "/assets/services/hvac.jpg",
-    "/assets/services/industrial.jpg",
-    "/assets/services/metal.jpg",
-    "/assets/services/office.jpg",
-    "/assets/services/office1.jpeg",
-    "/assets/services/office2.jpeg",
-    "/assets/services/office3.jpeg",
-    "/assets/services/office4.jpeg",
-    "/assets/services/officeafter.jpeg",
-    "/assets/services/officeafter1.jpeg",
-    "/assets/services/officeafter3.jpeg",
-    "/assets/services/ups.jpeg",
-    "/assets/services/wood.jpg",
+    // Office Scrap & Dismantling
+    "/assets/office scrap and dismantaling/office-dismantling-service.jpg",
+    "/assets/office scrap and dismantaling/office1.jpeg",
+    "/assets/office scrap and dismantaling/office2.jpeg",
+    "/assets/office scrap and dismantaling/office3.jpeg",
+    "/assets/office scrap and dismantaling/office hero.jpeg",
+    "/assets/office scrap and dismantaling/office.jpg",
+    "/assets/office scrap and dismantaling/office dismantling.webp",
+    "/assets/office scrap and dismantaling/officeafter.jpeg",
+    "/assets/office scrap and dismantaling/officeafter1.jpeg",
+    "/assets/office scrap and dismantaling/officeafter3.jpeg",
+
+    // Electrical & Power Scrap
+    "/assets/electrical scraps/wirescrap.jpg",
+    "/assets/electrical scraps/ups.jpeg",
+    "/assets/electrical scraps/generator.jpeg",
+    "/assets/electrical scraps/wire.jfif.jpeg",
+
+    // HVAC Scrap
+    "/assets/hvac scraps/acscraps.jpg",
+    "/assets/hvac scraps/hvac.jpg",
+
+    // Metal Scrap
+    "/assets/metal scraps/metal.jpg",
+    "/assets/metal scraps/metallandscao.jpeg",
+    "/assets/metal scraps/copper.jpg",
+    "/assets/metal scraps/aluminimumsubpage.jpeg",
+
+    // Mixed Scrap
+    "/assets/mixed scrap/mixed.jpg.jpeg",
+    "/assets/mixed scrap/mixed3.jpg.jpeg",
+    "/assets/mixed scrap/mixed2.jfif.jpeg",
+    "/assets/mixed scrap/mix.jpg.jpeg",
+    "/assets/mixed scrap/mix1.webp",
+
+    // Wood Scrap
+    "/assets/wood scrap/wood landscape.jfif.jpeg",
+    "/assets/wood scrap/wood1.jfif.jpeg",
+    "/assets/wood scrap/wood.webp",
   ];
 
   return (

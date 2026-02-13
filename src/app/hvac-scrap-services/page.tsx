@@ -1,36 +1,21 @@
+"use client";
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CheckCircle2, ArrowRight, Building2, Wind, Snowflake, Thermometer, Fan, Settings, ShieldCheck, Factory, ClipboardList, FileText, Wrench, MessageSquare, Recycle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-    title: "HVAC Scrap Buyers | Large-Scale AC & Chiller Scrap – AK Enterprises",
-    description: "AK Enterprises provides large-scale HVAC scrap services including AC and chiller dismantling with safe handling and transparent pricing.",
-};
+import { motion } from "framer-motion";
 
 export default function HvacScrapService() {
     const serviceHighlights = [
         {
-            title: "Bulk air conditioner (AC) scrap",
+            title: "AC",
             icon: Wind,
         },
         {
-            title: "Chiller AC and industrial cooling systems",
+            title: "Chiller AC",
             icon: Snowflake,
-        },
-        {
-            title: "Centralized HVAC units",
-            icon: Thermometer,
-        },
-        {
-            title: "Commercial cooling equipment",
-            icon: Fan,
-        },
-        {
-            title: "Associated metal and electrical components",
-            icon: Settings,
         },
     ];
 
@@ -77,26 +62,58 @@ export default function HvacScrapService() {
         <div className="min-h-screen font-sans bg-white">
             <Header />
 
-            <main className="pt-[64px]">
+            <main className="pt-[80px] md:pt-[100px]">
                 {/* Hero Section */}
-                <section className="relative py-10 md:py-16 lg:py-20 bg-gray-900 text-white overflow-hidden flex items-center min-h-[25vh] md:min-h-[35vh]">
-                    <div className="absolute inset-0 z-0 text-center">
+                <section className="relative min-h-[40vh] md:min-h-[60vh] flex items-end overflow-hidden bg-gray-900 pb-16 md:pb-28 pt-24">
+                    {/* Background Layer */}
+                    <div className="absolute inset-0 z-0">
                         <Image
-                            src="/assets/services/hvac.jpg"
+                            src="/assets/hvac scraps/hvac.jpg"
                             alt="HVAC Systems"
                             fill
-                            className="object-cover"
+                            className="object-cover opacity-50 contrast-125"
                             priority
                         />
-                        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 via-gray-900/30 to-gray-900/60"></div>
+                        {/* Advanced Gradient Overlays */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
+
+                        {/* Decorative Blur Element */}
+                        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-green-500/20 blur-[120px] rounded-full -mr-32 -mt-32"></div>
                     </div>
-                    <div className="container mx-auto px-4 relative z-10 text-center">
-                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-black mb-4 md:mb-6 leading-tight max-w-5xl mx-auto tracking-tighter text-center">
-                            HVAC Scrap Buyers for <span className="text-green-500">Large-Scale Cooling Systems</span>
-                        </h1>
-                        <p className="text-base md:text-lg lg:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed text-center">
-                            AK Enterprises provides professional HVAC scrap services for factories, commercial buildings, hospitals, malls, and industrial facilities.
-                        </p>
+
+                    <div className="container mx-auto px-4 relative z-10">
+                        <div className="max-w-4xl text-left">
+                            {/* Premium Badge */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6 }}
+                                className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-[10px] md:text-xs font-bold mb-6"
+                            >
+                                <ShieldCheck className="w-3.5 h-3.5" />
+                                <span className="uppercase tracking-wider">Industrial Excellence Certified</span>
+                            </motion.div>
+
+                            <motion.h1
+                                initial={{ opacity: 0, x: -25 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.8, delay: 0.2 }}
+                                className="text-3xl md:text-5xl lg:text-7xl font-black text-white leading-[1.05] tracking-tighter mb-6"
+                            >
+                                HVAC Scrap & <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600">Cooling Systems</span>
+                            </motion.h1>
+
+                            <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 0.8, delay: 0.4 }}
+                                className="text-base md:text-lg lg:text-xl text-gray-300 max-w-2xl leading-relaxed font-medium"
+                            >
+                                AK Enterprises provides professional HVAC scrap services for factories, commercial buildings, hospitals, malls, and industrial facilities.
+                            </motion.p>
+                        </div>
                     </div>
                 </section>
 
@@ -148,7 +165,7 @@ export default function HvacScrapService() {
                             <div className="w-full lg:w-1/3">
                                 <div className="relative h-64 md:h-80 lg:h-[450px] w-full max-w-md mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white group">
                                     <Image
-                                        src="/assets/services/hvac.jpg"
+                                        src="/assets/hvac scraps/hvac.jpg"
                                         alt="HVAC Unit"
                                         fill
                                         className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -164,7 +181,7 @@ export default function HvacScrapService() {
                 {/* Professionalism Section */}
                 <section className="py-12 md:py-24 bg-gray-50 overflow-hidden">
                     <div className="container mx-auto px-4">
-                        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
+                        <div className="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-20">
                             <div className="lg:w-1/2">
                                 <h2 className="text-green-600 font-extrabold uppercase tracking-tight mb-4 text-xl md:text-2xl lg:text-3xl text-left">HVAC Scrap Services</h2>
                                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 lg:mb-8 text-gray-900 text-left">
@@ -181,7 +198,7 @@ export default function HvacScrapService() {
                             </div>
                             <div className="lg:w-1/2 relative h-64 sm:h-[400px] w-full rounded-[2rem] md:rounded-3xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/assets/subpages images/acscraps.jpg"
+                                    src="/assets/hvac scraps/acscraps.jpg"
                                     alt="Industrial Chiller Dismantling"
                                     fill
                                     className="object-cover"

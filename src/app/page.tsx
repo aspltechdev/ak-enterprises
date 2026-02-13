@@ -12,16 +12,21 @@ import { Footer } from "@/components/Footer";
 
 import { ScrollReveal } from "@/components/ScrollReveal";
 
+import { Certification } from "@/components/Certification";
+
 export default function Home() {
   return (
     <div className="min-h-screen font-sans overflow-x-hidden w-full">
       <Header />
-      <main className="pt-[64px]">
+      <main className="pt-[80px] md:pt-[100px]">
         <Hero />
 
         <ScrollReveal>
           <About />
         </ScrollReveal>
+
+        {/* Infinite Carousel Section */}
+        <Certification />
 
         <ScrollReveal>
           <WhyChooseUs />
