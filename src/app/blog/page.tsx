@@ -18,7 +18,7 @@ export default function BlogPage() {
             date: "February 5, 2026",
             author: "Admin",
             readTime: "6 min read",
-            image: "/assets/all/WhatsApp Image 2026-02-12 at 10.12.31 AM.jpeg",
+            image: "/assets/office scrap and dismantaling/office.jpg",
             excerpt: "Office dismantling is more than just clearing out furniture; it is a systematic process that requires precision, safety, and environmental responsibility. At AK Enterprises, we specialize in Large-Scale office clearance projects that minimize downtime for businesses.",
             content: (
                 <>
@@ -41,7 +41,7 @@ export default function BlogPage() {
             date: "January 28, 2026",
             author: "Admin",
             readTime: "5 min read",
-            image: "/assets/all/WhatsApp Image 2026-02-12 at 10.12.22 AM (1).jpeg",
+            image: "/assets/about/industrial.jpg",
             excerpt: "Determining the value of industrial scrap is a science that involves understanding material purity, market demand, and weight accuracy. For factories and manufacturing units, scrap is often a hidden asset that can be converted into significant working capital.",
             content: (
                 <>
@@ -64,7 +64,7 @@ export default function BlogPage() {
             date: "January 20, 2026",
             author: "Admin",
             readTime: "7 min read",
-            image: "/assets/all/WhatsApp Image 2026-02-12 at 10.12.28 AM.jpeg",
+            image: "/assets/hvac scraps/hvac.jpg",
             excerpt: "Dismantling centralized HVAC systems and industrial chillers is a high-risk task that requires specialized tools and expertise. It involves handling bulky machinery and potentially hazardous refrigerants.",
             content: (
                 <>

@@ -18,7 +18,7 @@ export default function AboutPage() {
                 <section className="relative py-20 md:py-32 bg-gray-900 text-white text-center overflow-hidden">
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="/assets/all/WhatsApp Image 2026-02-12 at 10.12.30 AM.jpeg"
+                            src="/assets/hero_industrial.png"
                             alt="Industrial Facility"
                             fill
                             className="object-cover"
@@ -60,7 +60,7 @@ export default function AboutPage() {
                             <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4 mt-6 lg:mt-0">
                                 <div className="relative h-40 md:h-64 rounded-2xl overflow-hidden shadow-xl">
                                     <Image
-                                        src="/assets/all/WhatsApp Image 2026-02-12 at 10.12.22 AM (1).jpeg"
+                                        src="/assets/about/industrial.jpg"
                                         alt="Industrial Facility"
                                         fill
                                         className="object-cover"
@@ -68,7 +68,7 @@ export default function AboutPage() {
                                 </div>
                                 <div className="relative h-40 md:h-64 rounded-2xl overflow-hidden shadow-xl md:mt-8">
                                     <Image
-                                        src="/assets/all/WhatsApp Image 2026-02-12 at 10.12.31 AM.jpeg"
+                                        src="/assets/office scrap and dismantaling/office1.jpeg"
                                         alt="Our Team"
                                         fill
                                         className="object-cover"

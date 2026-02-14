@@ -5,7 +5,7 @@ import Link from "next/link";
 export function Blog() {
   const posts = [
     {
-      image: "/assets/services/office.jpg",
+      image: "/assets/office scrap and dismantaling/office.jpg",
       title: "Efficient Office Dismantling",
       excerpt: "Stories, insights, and best practices for large-scale office clearances with minimal operational disruption.",
       bgColor: "bg-[#E6F9E6]", // Light Lime/Green
@@ -18,7 +18,7 @@ export function Blog() {
       )
     },
     {
-      image: "/assets/services/industrial.jpg",
+      image: "/assets/about/industrial.jpg",
       title: "Industrial Scrap Valuation",
       excerpt: "The foundational knowledge and skills to leverage industrial scrap for any type of large project.",
       bgColor: "bg-[#E0F2FE]", // Light Blue
@@ -31,7 +31,7 @@ export function Blog() {
       )
     },
     {
-      image: "/assets/services/hvac.jpg",
+      image: "/assets/hvac scraps/hvac.jpg",
       title: "Safe HVAC Scrap Removal",
       excerpt: "How businesses like yours are leveraging professional HVAC disposal to drive growth and sustainability.",
       bgColor: "bg-[#FDF2F8]", // Light Pink
