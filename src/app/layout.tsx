@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://akenterprises.com'),
   title: "AK Enterprises | Leading Industrial & scrap Processing Solutions",
   description: "AK Enterprises provides world-class industrial solutions, scrap processing, and metal recovery services. With over 20 years of experience, we deliver excellence and sustainable practices.",
   keywords: ["industrial solutions", "scrap processing", "metal recovery", "recycling", "AK Enterprises", "manufacturing"],

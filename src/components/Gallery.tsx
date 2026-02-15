@@ -17,8 +17,6 @@ export function Gallery() {
     "/assets/office scrap and dismantaling/office hero.jpeg",
     "/assets/office scrap and dismantaling/office.jpg",
     "/assets/office scrap and dismantaling/office dismantling.webp",
-    "/assets/office scrap and dismantaling/officeafter.jpeg",
-    "/assets/office scrap and dismantaling/officeafter1.jpeg",
     "/assets/office scrap and dismantaling/officeafter3.jpeg",
 
     // Electrical & Power Scrap
