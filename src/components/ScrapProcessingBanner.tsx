@@ -7,7 +7,7 @@ export function ScrapProcessingBanner() {
                 {/* Image Container */}
                 <div className="relative w-full aspect-[21/9] md:aspect-[2/1] rounded-[2.5rem] overflow-hidden shadow-2xl mb-8 group">
                     <Image
-                        src="/assets/hero_industrial.png"
+                        src="/assets/gallery/ak2.jpeg"
                         alt="Safe and Quality Scrap Processing Site"
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"

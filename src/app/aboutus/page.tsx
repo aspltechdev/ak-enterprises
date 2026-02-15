@@ -18,7 +18,7 @@ export default function AboutPage() {
                 <section className="relative py-20 md:py-32 bg-gray-900 text-white text-center overflow-hidden">
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="/assets/hero_industrial.png"
+                            src="/assets/gallery/ak3.jpeg"
                             alt="Industrial Facility"
                             fill
                             className="object-cover"

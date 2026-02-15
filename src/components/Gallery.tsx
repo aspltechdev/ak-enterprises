@@ -3,7 +3,6 @@ import Image from "next/image";
 export function Gallery() {
   const images = [
     // Gallery Items
-    "/assets/gallery/aluminium scrap.jpg.jpeg",
     "/assets/gallery/aluminium scrap2.jfif.jpeg",
     "/assets/gallery/copper scrap2.jfif.jpeg",
     "/assets/gallery/copper-scrap.jpg.jpeg",
@@ -60,7 +59,7 @@ export function Gallery() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {/* Before & After Comparison Card */}
-          <div className="col-span-2 row-span-2 relative aspect-square overflow-hidden rounded-xl bg-gray-200 group hover:shadow-xl transition-all duration-300 border border-gray-100">
+          <div className="col-span-2 md:row-span-2 relative aspect-[2/1] md:aspect-square overflow-hidden rounded-xl bg-gray-200 group hover:shadow-xl transition-all duration-300 border border-gray-100">
             <div className="grid grid-cols-2 h-full">
               <div className="relative h-full border-r border-gray-100">
                 <Image
@@ -69,18 +68,18 @@ export function Gallery() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest shadow-lg z-10">
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-red-600 text-white px-3 py-1 md:px-4 md:py-1.5 rounded-full text-[8px] md:text-xs font-black uppercase tracking-widest shadow-lg z-10">
                   Before
                 </div>
               </div>
               <div className="relative h-full">
                 <Image
-                  src="/assets/office scrap and dismantaling/officeafter.jpeg"
+                  src="/assets/office scrap and dismantaling/officeafter1.jpeg"
                   alt="After"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest shadow-lg z-10">
+                <div className="absolute top-2 right-2 md:top-4 md:right-4 bg-green-600 text-white px-3 py-1 md:px-4 md:py-1.5 rounded-full text-[8px] md:text-xs font-black uppercase tracking-widest shadow-lg z-10">
                   After
                 </div>
               </div>

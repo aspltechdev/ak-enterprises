@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "AK Enterprises",
     images: [
       {
-        url: "/assets/hero_industrial.png",
+        url: "/assets/ak-enterprises-logo.png",
         width: 1200,
         height: 630,
         alt: "AK Enterprises Industrial Facility",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AK Enterprises | Industrial Solutions",
     description: "Leading provider of industrial solutions and scrap processing services.",
-    images: ["/assets/hero_industrial.png"],
+    images: ["/assets/ak-enterprises-logo.png"],
   },
   robots: {
     index: true,
