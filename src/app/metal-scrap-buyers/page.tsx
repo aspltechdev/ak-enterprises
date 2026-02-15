@@ -210,7 +210,7 @@ export default function MetalScrapService() {
                             </div>
                             <div className="lg:w-1/2 relative h-64 sm:h-[400px] w-full rounded-[2rem] md:rounded-3xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/assets/subpages images/aluminimumsubpage.jpeg"
+                                    src="/assets/metal scraps/aluminimumsubpage.jpeg"
                                     alt="Professional Metal Loading"
                                     fill
                                     className="object-cover"
