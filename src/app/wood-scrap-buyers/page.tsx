@@ -88,8 +88,8 @@ export default function WoodScrapService() {
                     {/* Background Layer */}
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="/assets/wood scrap/wood landscape.jfif.jpeg"
-                            alt="Industrial Wood Scrap Yard"
+                            src="/assets/gallery/ak2.jpeg"
+                            alt="Industrial Scrap Yard"
                             fill
                             className="object-cover opacity-50 contrast-125"
                             priority
@@ -183,8 +183,8 @@ export default function WoodScrapService() {
                             <div className="w-full lg:w-1/3">
                                 <div className="relative h-64 md:h-80 lg:h-[450px] w-full max-w-md mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white group">
                                     <Image
-                                        src="/assets/wood scrap/wood1.jfif.jpeg"
-                                        alt="Industrial Wooden Pallets"
+                                        src="/assets/gallery/ak3.jpeg"
+                                        alt="Industrial Scraps"
                                         fill
                                         className="object-cover group-hover:scale-110 transition-transform duration-700"
                                         priority
@@ -216,8 +216,8 @@ export default function WoodScrapService() {
                             </div>
                             <div className="lg:w-1/2 relative h-64 sm:h-[400px] w-full rounded-[2rem] md:rounded-3xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/assets/wood scrap/wood.webp"
-                                    alt="Professional Wood Scrap Handling"
+                                    src="/assets/gallery/ak4.jpeg"
+                                    alt="Professional Scrap Handling"
                                     fill
                                     className="object-cover"
                                     priority

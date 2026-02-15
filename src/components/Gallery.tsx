@@ -2,7 +2,6 @@ import Image from "next/image";
 
 export function Gallery() {
   const images = [
-    "/assets/hero_industrial.png",
     // Gallery Items
     "/assets/gallery/aluminium scrap.jpg.jpeg",
     "/assets/gallery/aluminium scrap2.jfif.jpeg",
@@ -45,11 +44,6 @@ export function Gallery() {
     "/assets/mixed scrap/mixed2.jfif.jpeg",
     "/assets/mixed scrap/mix.jpg.jpeg",
     "/assets/mixed scrap/mix1.webp",
-
-    // Wood Scrap
-    "/assets/wood scrap/wood landscape.jfif.jpeg",
-    "/assets/wood scrap/wood1.jfif.jpeg",
-    "/assets/wood scrap/wood.webp",
   ];
 
   return (
@@ -65,6 +59,35 @@ export function Gallery() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          {/* Before & After Comparison Card */}
+          <div className="col-span-2 row-span-2 relative aspect-square overflow-hidden rounded-xl bg-gray-200 group hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="grid grid-cols-2 h-full">
+              <div className="relative h-full border-r border-gray-100">
+                <Image
+                  src="/assets/office scrap and dismantaling/officebefore.jpeg"
+                  alt="Before"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest shadow-lg z-10">
+                  Before
+                </div>
+              </div>
+              <div className="relative h-full">
+                <Image
+                  src="/assets/office scrap and dismantaling/officeafter.jpeg"
+                  alt="After"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest shadow-lg z-10">
+                  After
+                </div>
+              </div>
+            </div>
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+          </div>
+
           {images.map((src, index) => (
             <div
               key={index}
