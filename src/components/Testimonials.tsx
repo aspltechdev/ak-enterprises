@@ -30,10 +30,10 @@ export function Testimonials() {
         <div className="absolute bottom-10 right-10 w-64 h-64 bg-blue-100 rounded-full blur-3xl mix-blend-multiply"></div>
       </div>
 
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-black text-green-600 uppercase tracking-widest mb-3">
-            Client Success Stories
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-tight mb-6">
+            Client <span className="text-green-600 italic font-serif">Success Stories</span>
           </h2>
 
         </div>

@@ -119,17 +119,17 @@ export default function ElectricalPowerScrapService() {
                                 initial={{ opacity: 0, x: -25 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.8, delay: 0.2 }}
-                                className="text-3xl md:text-5xl lg:text-7xl font-black text-white leading-[1.05] tracking-tighter mb-6"
+                                className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] tracking-tighter mb-6 drop-shadow-lg"
                             >
                                 Electrical & <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600">Power Scrap</span>
+                                <span className="text-green-400">Power Scrap</span>
                             </motion.h1>
 
                             <motion.p
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 0.8, delay: 0.4 }}
-                                className="text-base md:text-lg lg:text-xl text-gray-300 max-w-2xl leading-relaxed font-medium"
+                                className="text-base md:text-lg lg:text-xl text-white/90 max-w-2xl leading-relaxed font-bold drop-shadow-md"
                             >
                                 Professional electrical and power scrap services for factories, commercial buildings, data centers, and industrial facilities.
                             </motion.p>
@@ -154,8 +154,8 @@ export default function ElectricalPowerScrapService() {
                         <div className="flex flex-col lg:flex-row gap-12 items-center">
                             <div className="w-full lg:w-2/3">
                                 <div className="space-y-6 lg:space-y-8 text-gray-700 leading-relaxed">
-                                    <h2 className="text-green-600 font-black uppercase tracking-tight text-xl md:text-3xl lg:text-4xl">Introduction</h2>
-                                    <p className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
+                                    <h2 className="text-green-600 font-extrabold uppercase tracking-tight text-2xl md:text-4xl lg:text-5xl">Introduction</h2>
+                                    <p className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 leading-tight">
                                         AK Enterprises specializes in handling large-scale electrical scrap, ensuring safe dismantling, accurate valuation, and responsible recycling.
                                     </p>
                                     <p className="text-base md:text-lg lg:text-xl font-medium text-gray-600">
@@ -168,13 +168,13 @@ export default function ElectricalPowerScrapService() {
                                             { title: "Eco-Friendly", desc: "Responsible recycling methods", icon: Recycle },
                                             { title: "Industrial Scale", desc: "Large volume project capability", icon: Factory }
                                         ].map((item, i) => (
-                                            <div key={i} className="flex flex-row sm:flex-col gap-4 sm:gap-3 items-start sm:items-start text-left">
-                                                <div className="flex-shrink-0 w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center">
-                                                    <item.icon className="w-5 h-5 text-green-600" />
+                                            <div key={i} className="flex flex-col gap-4 p-6 bg-green-50 rounded-2xl border border-green-100 transition-all hover:bg-green-100 group">
+                                                <div className="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                                    <item.icon className="w-6 h-6 text-green-600" />
                                                 </div>
                                                 <div>
-                                                    <h4 className="font-bold text-gray-900">{item.title}</h4>
-                                                    <p className="text-sm text-gray-500">{item.desc}</p>
+                                                    <h4 className="font-extrabold text-gray-900 text-lg">{item.title}</h4>
+                                                    <p className="text-sm text-gray-600 font-medium">{item.desc}</p>
                                                 </div>
                                             </div>
                                         ))}
@@ -203,10 +203,9 @@ export default function ElectricalPowerScrapService() {
                     <div className="container mx-auto px-4">
                         <div className="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-20">
                             <div className="lg:w-1/2">
-                                <h2 className="text-green-600 font-extrabold uppercase tracking-tight mb-4 text-xl md:text-2xl lg:text-3xl text-left">Electrical & Power Scrap Services</h2>
-                                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 lg:mb-8 text-gray-900 text-left">
+                                <h2 className="text-2xl md:text-3xl lg:text-5xl font-black mb-6 lg:mb-10 text-gray-900 leading-[1.1] text-left">
                                     Safe Handling of Large-Scale Electrical Scrap
-                                </h3>
+                                </h2>
                                 <div className="space-y-4 lg:space-y-6 text-gray-600 text-base md:text-lg text-left">
                                     <p>
                                         Electrical scrap involves heavy equipment, sensitive components, and potential hazards. AK Enterprises is equipped to manage Large-Scale electrical and power scrap with trained manpower, proper tools, and compliance-focused execution.
@@ -233,10 +232,9 @@ export default function ElectricalPowerScrapService() {
                 <section className="py-12 md:py-24 bg-white">
                     <div className="container mx-auto px-4">
                         <div className="text-center mb-10 md:mb-16">
-                            <h2 className="text-green-600 font-extrabold uppercase mb-4 text-xl md:text-2xl lg:text-3xl text-center">Types of Electrical Scrap We Buy</h2>
-                            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center">Our Electrical Scrap Services Include:</h3>
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 text-center leading-[1.1]">Our Electrical Scrap Services Include</h2>
                         </div>
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 max-w-[1440px] mx-auto">
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 container mx-auto px-4">
                             {serviceHighlights.map((item, index) => {
                                 const Icon = item.icon;
                                 return (
@@ -262,9 +260,8 @@ export default function ElectricalPowerScrapService() {
                 {/* Our Process */}
                 <section className="py-16 md:py-24 bg-white">
                     <div className="container mx-auto px-4">
-                        <div className="text-center mb-12 md:mb-16">
-                            <h2 className="text-green-600 font-extrabold uppercase tracking-tight mb-4 text-xl md:text-2xl lg:text-3xl text-center">Our Process</h2>
-                            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center">Structured Approach for Electrical Scrap Removal</h3>
+                        <div className="text-center mb-12 md:mb-20">
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 text-center leading-[1.1]">Structured Approach for Electrical Scrap Removal</h2>
                         </div>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                             {processSteps.map((step, index) => {
@@ -300,20 +297,15 @@ export default function ElectricalPowerScrapService() {
                                     Partner with AK Enterprises for safe, compliant, and high-value electrical scrap clearance.
                                 </p>
                                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                                    <Link
-                                        href="https://wa.me/91XXXXXXXXXX"
+                                    <a
+                                        href="https://wa.me/919538438069"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="inline-flex items-center gap-3 bg-white text-green-600 px-8 md:px-10 py-4 md:py-5 rounded-full font-black uppercase tracking-widest text-sm hover:bg-green-50 transition-all hover:scale-105 shadow-xl"
                                     >
                                         <MessageSquare className="w-5 h-5" />
-                                        Call / WhatsApp Now
-                                    </Link>
-                                    <Link
-                                        href="/#contact"
-                                        className="inline-flex items-center gap-3 bg-green-700 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-black uppercase tracking-widest text-sm hover:bg-green-800 transition-all hover:scale-105 border border-white/10 shadow-xl"
-                                    >
-                                        Free Inspection
-                                        <ArrowRight className="w-5 h-5" />
-                                    </Link>
+                                        WhatsApp Now
+                                    </a>
                                 </div>
                                 <p className="mt-8 text-green-100 font-bold italic text-center">
                                     👉 Professional handling for Large-Scale electrical projects.

@@ -26,12 +26,9 @@ export function WhyChooseUs() {
 
   return (
     <section id="why-choose-us" className="pt-12 pb-24 bg-gray-50 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 max-w-4xl mx-auto">
-          <h2 className="text-green-600 font-black uppercase mb-4 tracking-tight text-2xl lg:text-3xl">WHY CHOOSE AK ENTERPRISES</h2>
-          <p className="text-xl lg:text-2xl font-black text-gray-900 leading-tight">
-            A trusted scrap partner for businesses requiring large-scale scrap handling, bulk pricing transparency, and professional dismantling services.
-          </p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.1]">Why Choose AK Enterprises for Large-Scale Scrap Management</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">

@@ -86,7 +86,7 @@ export default function OfficeScrapService() {
                         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-green-500/20 blur-[120px] rounded-full -mr-32 -mt-32"></div>
                     </div>
 
-                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+                    <div className="container mx-auto px-4">
                         <div className="max-w-4xl text-left">
                             {/* Premium Badge */}
                             <motion.div
@@ -103,17 +103,17 @@ export default function OfficeScrapService() {
                                 initial={{ opacity: 0, x: -25 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.8, delay: 0.2 }}
-                                className="text-3xl md:text-5xl lg:text-7xl font-black text-white leading-[1.05] tracking-tighter mb-6"
+                                className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] tracking-tighter mb-6 drop-shadow-lg"
                             >
                                 Office Scrap & <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600">Dismantling</span>
+                                <span className="text-green-400">Dismantling</span>
                             </motion.h1>
 
                             <motion.p
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 0.8, delay: 0.4 }}
-                                className="text-base md:text-lg lg:text-xl text-gray-300 max-w-2xl leading-relaxed font-medium"
+                                className="text-base md:text-lg lg:text-xl text-white/90 max-w-2xl leading-relaxed font-bold drop-shadow-md"
                             >
                                 Professional bulk removal for large-scale facilities, IT parks, and corporate premises with safety compliance and maximum value recovery.
                             </motion.p>
@@ -135,13 +135,13 @@ export default function OfficeScrapService() {
                         </svg>
                     </div>
 
-                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+                    <div className="container mx-auto px-4">
                         <div className="flex flex-col lg:flex-row gap-12 items-center">
                             {/* Left Column: Content */}
                             <div className="w-full lg:w-2/3">
                                 <div className="space-y-6 lg:space-y-8 text-gray-700 leading-relaxed">
-                                    <h2 className="text-green-600 font-black uppercase tracking-tight text-xl md:text-3xl lg:text-4xl">Introduction</h2>
-                                    <p className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
+                                    <h2 className="text-green-600 font-extrabold uppercase tracking-tight text-2xl md:text-4xl lg:text-5xl">Introduction</h2>
+                                    <p className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 leading-tight">
                                         We specialize in large-scale office clearances, handling everything from furniture removal to complete dismantling with safety, speed, and transparency.
                                     </p>
                                     <p className="text-base md:text-lg lg:text-xl font-medium text-gray-600">
@@ -154,13 +154,13 @@ export default function OfficeScrapService() {
                                             { title: "Eco-Compliant", desc: "Sustainable disposal practices", icon: Recycle },
                                             { title: "Bulk Handling", desc: "Scale for any facility size", icon: Factory }
                                         ].map((item, i) => (
-                                            <div key={i} className="flex flex-row sm:flex-col gap-4 sm:gap-3 items-start sm:items-start text-left">
-                                                <div className="flex-shrink-0 w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center">
-                                                    <item.icon className="w-5 h-5 text-green-600" />
+                                            <div key={i} className="flex flex-col gap-4 p-6 bg-green-50 rounded-2xl border border-green-100 transition-all hover:bg-green-100 group">
+                                                <div className="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                                    <item.icon className="w-6 h-6 text-green-600" />
                                                 </div>
                                                 <div>
-                                                    <h4 className="font-bold text-gray-900">{item.title}</h4>
-                                                    <p className="text-sm text-gray-500">{item.desc}</p>
+                                                    <h4 className="font-extrabold text-gray-900 text-lg">{item.title}</h4>
+                                                    <p className="text-sm text-gray-600 font-medium">{item.desc}</p>
                                                 </div>
                                             </div>
                                         ))}
@@ -186,13 +186,12 @@ export default function OfficeScrapService() {
 
                 {/* Professionalism Section */}
                 <section className="py-12 md:py-24 bg-gray-50 overflow-hidden">
-                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+                    <div className="container mx-auto px-4">
                         <div className="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-20">
                             <div className="lg:w-1/2">
-                                <h2 className="text-green-600 font-extrabold uppercase tracking-tight mb-4 text-xl md:text-2xl lg:text-3xl">Office Scrap & Dismantling Services</h2>
-                                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 lg:mb-8 text-gray-900">
+                                <h2 className="text-2xl md:text-3xl lg:text-5xl font-black mb-6 lg:mb-10 text-gray-900 leading-[1.1]">
                                     Large-Scale Office Dismantling Done Professionally
-                                </h3>
+                                </h2>
                                 <div className="space-y-4 lg:space-y-6 text-gray-600 text-base md:text-lg">
                                     <p>
                                         Office dismantling requires planning, safety compliance, and skilled execution — especially for large office spaces and multi-floor buildings. AK Enterprises handles office scrap dismantling systematically, ensuring proper segregation, safe removal, and maximum value recovery.
@@ -217,12 +216,11 @@ export default function OfficeScrapService() {
 
                 {/* Services Checklist */}
                 <section className="py-12 md:py-24 bg-white">
-                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+                    <div className="container mx-auto px-4">
                         <div className="text-center mb-10 md:mb-16">
-                            <h2 className="text-green-600 font-extrabold uppercase mb-4 text-xl md:text-2xl lg:text-3xl text-center">Services we offer</h2>
-                            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center">Our Office Scrap Services Include:</h3>
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 text-center leading-[1.1]">Our Office Scrap Services Include</h2>
                         </div>
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 max-w-[1440px] mx-auto">
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 container mx-auto px-4">
                             {serviceHighlights.map((item, index) => {
                                 const Icon = item.icon;
                                 return (
@@ -247,10 +245,9 @@ export default function OfficeScrapService() {
 
                 {/* Our Process */}
                 <section className="py-16 md:py-24 bg-white">
-                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
-                        <div className="text-center mb-12 md:mb-16">
-                            <h2 className="text-green-600 font-extrabold uppercase tracking-tight mb-4 text-xl md:text-2xl lg:text-3xl">Our Process</h2>
-                            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">Simple & Efficient Scrap Removal Process</h3>
+                    <div className="container mx-auto px-4">
+                        <div className="text-center mb-12 md:mb-20">
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.1]">Simple & Efficient Scrap Removal Process</h2>
                         </div>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                             {processSteps.map((step, index) => {
@@ -273,53 +270,13 @@ export default function OfficeScrapService() {
                     </div>
                 </section>
 
-                {/* Before & After Gallery */}
-                <section className="py-12 md:py-24 bg-gray-50">
-                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
-                        <div className="text-center mb-10 md:mb-16">
-                            <h2 className="text-green-600 font-extrabold uppercase mb-4 text-xl md:text-2xl lg:text-3xl">Work Gallery</h2>
-                            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">Before & After Dismantling</h3>
-                        </div>
-
-                        <div className="max-w-5xl mx-auto">
-                            <div className="bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100">
-                                <div className="grid grid-cols-1 md:grid-cols-2">
-                                    {/* Before Image */}
-                                    <div className="relative h-[300px] md:h-[500px] border-b md:border-b-0 md:border-r border-gray-100">
-                                        <Image
-                                            src="/assets/office scrap and dismantaling/officebefore.jpeg"
-                                            alt="Office Before Dismantling"
-                                            fill
-                                            className="object-cover"
-                                        />
-                                        <div className="absolute top-6 left-6 bg-red-600 text-white px-6 py-2 rounded-full text-sm font-black uppercase tracking-widest shadow-xl">
-                                            Before
-                                        </div>
-                                    </div>
-                                    {/* After Image */}
-                                    <div className="relative h-[300px] md:h-[500px]">
-                                        <Image
-                                            src="/assets/office scrap and dismantaling/officeafter.jpeg"
-                                            alt="Office After Dismantling"
-                                            fill
-                                            className="object-cover transition-transform duration-700 hover:scale-105"
-                                        />
-                                        <div className="absolute top-6 right-6 bg-green-600 text-white px-6 py-2 rounded-full text-sm font-black uppercase tracking-widest shadow-xl">
-                                            After
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
                 {/* Industries We Serve */}
 
 
                 {/* Call To Action Section */}
                 <section className="py-12 md:py-16 bg-white overflow-hidden relative">
-                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+                    <div className="container mx-auto px-4">
                         <div className="bg-green-600 rounded-3xl p-8 md:p-12 text-center text-white shadow-2xl relative overflow-hidden group">
                             {/* Decorative Background Elements */}
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 transition-transform duration-700 group-hover:scale-110"></div>
@@ -331,20 +288,15 @@ export default function OfficeScrapService() {
                                     Contact AK Enterprises for professional office scrap dismantling with fair pricing, fast execution, and complete compliance.
                                 </p>
                                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                                    <Link
-                                        href="https://wa.me/91XXXXXXXXXX"
+                                    <a
+                                        href="https://wa.me/919538438069"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="inline-flex items-center gap-3 bg-white text-green-600 px-8 md:px-10 py-4 md:py-5 rounded-full font-black uppercase tracking-widest text-sm hover:bg-green-50 transition-all hover:scale-105 shadow-xl"
                                     >
                                         <MessageSquare className="w-5 h-5" />
-                                        Call / WhatsApp Now
-                                    </Link>
-                                    <Link
-                                        href="/#contact"
-                                        className="inline-flex items-center gap-3 bg-green-700 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-black uppercase tracking-widest text-sm hover:bg-green-800 transition-all hover:scale-105 border border-white/10 shadow-xl"
-                                    >
-                                        Free Site Inspection
-                                        <ArrowRight className="w-5 h-5" />
-                                    </Link>
+                                        WhatsApp Now
+                                    </a>
                                 </div>
                                 <p className="mt-8 text-green-100 font-bold italic">
                                     👉 Get a complete clearance solution today!

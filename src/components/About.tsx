@@ -7,17 +7,12 @@ export function About() {
 
   return (
     <section id="about" className="pt-20 pb-12 bg-white overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+      <div className="container mx-auto px-4">
         {/* Intro Section */}
         <div className="flex flex-col lg:flex-row gap-16 items-center mb-24">
           <div className="lg:w-1/2">
-            <div className="relative group">
-              <h1 className="text-green-600 font-black tracking-tight uppercase mb-4 text-2xl lg:text-3xl">ABOUT US</h1>
-              <div className="w-24 h-1.5 bg-green-600 mb-8 rounded-full transition-all group-hover:w-40"></div>
-            </div>
-
-            <h2 className="text-xl lg:text-2xl font-black mb-6 leading-tight text-gray-900 drop-shadow-sm">
-              Leading the Way in <span className="text-green-600">Large-Scale</span> Office Clearance & Professional Dismantling
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-6 leading-[1.1]">
+              About Us
             </h2>
 
             <div className="bg-green-50 border-l-4 border-green-600 p-6 lg:p-8 rounded-r-3xl rounded-bl-3xl mb-10 shadow-lg shadow-green-900/5 hover:shadow-xl transition-all duration-300">
@@ -111,8 +106,8 @@ export function About() {
           <div className="w-16 h-1 bg-green-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <div className="pb-12 px-6 md:px-12 lg:px-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1440px] mx-auto">
+        <div className="pb-12 px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {[
               { title: "Office Scrap & Dismantling", image: "/assets/office scrap and dismantaling/office-dismantling-service.jpg", href: "/office-scrap-dismantling-services" },
               { title: "Electrical & Power Scrap", image: "/assets/electrical scraps/wirescrap.jpg", href: "/electrical-power-scrap-services" },

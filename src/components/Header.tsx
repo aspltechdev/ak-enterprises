@@ -54,7 +54,7 @@ export function Header() {
       transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
       className="bg-white shadow-sm fixed top-0 left-0 w-full z-50"
     >
-      <nav className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-3">
+      <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <button onClick={() => handleNav("home", "/")} className="flex items-center gap-2 cursor-pointer">
             <Image

@@ -21,7 +21,7 @@ export function Hero() {
 
   return (
     <section id="home" className="relative py-8 bg-white overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-5xl mx-auto mb-8">
           {/* Headline to match the "Your Waste Our Business" style */}
           <motion.h1

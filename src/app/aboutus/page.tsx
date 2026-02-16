@@ -26,7 +26,7 @@ export default function AboutPage() {
                         />
                         <div className="absolute inset-0 bg-black/60"></div>
                     </div>
-                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+                    <div className="container mx-auto px-4">
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight mb-4">About Our Company</h1>
                         <p className="max-w-2xl mx-auto text-lg md:text-xl text-green-400 font-bold uppercase tracking-widest">
                             Trusted industrial scrap management and recycling solutions since 2000.
@@ -36,7 +36,7 @@ export default function AboutPage() {
 
                 {/* Story Section */}
                 <section className="py-4 md:py-16 bg-white">
-                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+                    <div className="container mx-auto px-4">
                         <div className="flex flex-col lg:flex-row gap-6 items-center">
                             <div className="w-full lg:w-1/2">
                                 <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider mb-3">
@@ -81,7 +81,7 @@ export default function AboutPage() {
 
                 {/* Stats Section */}
                 <section className="py-4 md:py-20 bg-gray-50">
-                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+                    <div className="container mx-auto px-4">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                             {[
                                 { icon: History, label: "Years Experience", value: "24+" },
@@ -104,7 +104,7 @@ export default function AboutPage() {
 
                 {/* Values Section */}
                 <section className="py-24 bg-gray-900 text-white">
-                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+                    <div className="container mx-auto px-4">
                         <div className="text-center mb-16">
                             <h2 className="text-green-500 font-bold uppercase tracking-widest mb-4">Our Core Values</h2>
                             <h3 className="text-4xl font-black">Why Businesses Trust Us</h3>
