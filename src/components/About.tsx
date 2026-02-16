@@ -114,7 +114,7 @@ export function About() {
 
 
         <div className="text-center mb-8 md:mb-12 px-4 max-w-2xl mx-auto">
-          <h2 className="text-green-600 font-extrabold uppercase mb-2 text-base md:text-2xl lg:text-3xl tracking-[0.2em]">Services we offer</h2>
+
           <h3 className="text-2xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-[1.1]">Our Services Include</h3>
           <div className="w-16 h-1 bg-green-500 mx-auto mt-4 rounded-full"></div>
         </div>
