@@ -77,6 +77,7 @@ export default function OfficeScrapService() {
                             fill
                             className="object-cover opacity-50 contrast-125"
                             priority
+                            sizes="100vw"
                         />
                         {/* Advanced Gradient Overlays */}
                         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
@@ -176,6 +177,7 @@ export default function OfficeScrapService() {
                                         alt="Office Clearance"
                                         fill
                                         className="object-cover group-hover:scale-110 transition-transform duration-700"
+                                        sizes="(max-width: 768px) 100vw, 33vw"
                                     />
                                     <div className="absolute inset-0 bg-green-600/5 hover:bg-transparent transition-colors"></div>
                                 </div>
@@ -208,6 +210,7 @@ export default function OfficeScrapService() {
                                     fill
                                     className="object-cover"
                                     priority
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                             </div>
                         </div>

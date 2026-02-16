@@ -45,6 +45,7 @@ export function About() {
                   alt="Industrial Mastery"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
 
@@ -87,6 +88,7 @@ export function About() {
                   alt="Industrial Mastery"
                   fill
                   className="object-cover hover:scale-110 transition-transform duration-1000"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw"
                 />
               </motion.div>
 
@@ -103,6 +105,7 @@ export function About() {
                   alt="Metal Recovery"
                   fill
                   className="object-cover hover:scale-110 transition-transform duration-1000"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 30vw"
                 />
               </motion.div>
 
@@ -112,9 +115,7 @@ export function About() {
               {/* Accent Badge */}
               <div className="absolute -top-6 -right-6 bg-white p-8 rounded-full shadow-2xl z-30 hidden md:block">
                 <div className="w-24 h-24 border-2 border-dashed border-green-200 rounded-full flex flex-col items-center justify-center animate-[spin_10s_linear_infinite]">
-                  <span className="text-xs font-black text-green-600 uppercase tracking-tighter text-center leading-none">
-                    Since <br /> 2000
-                  </span>
+
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <Recycle className="w-8 h-8 text-green-600" />

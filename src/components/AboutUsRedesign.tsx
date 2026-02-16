@@ -15,6 +15,7 @@ export function AboutHero() {
                     fill
                     className="object-cover brightness-50"
                     priority
+                    sizes="100vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-white"></div>
             </div>
@@ -81,6 +82,7 @@ export function MissionVision() {
                                 alt="Our Operations"
                                 fill
                                 className="object-cover group-hover:scale-110 transition-transform duration-1000 grayscale group-hover:grayscale-0"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                             />
                             <div className="absolute inset-0 bg-green-600/10 mix-blend-multiply"></div>
 

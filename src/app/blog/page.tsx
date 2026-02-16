@@ -117,6 +117,7 @@ export default function BlogPage() {
                                                 alt={blog.title}
                                                 fill
                                                 className="object-cover grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700"
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                             />
                                             {/* Decorative Overlays */}
                                             <div className="absolute inset-0 bg-black/10 mix-blend-overlay"></div>

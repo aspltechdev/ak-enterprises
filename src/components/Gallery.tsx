@@ -65,6 +65,7 @@ export function Gallery() {
                   alt="Before"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 40vw, 25vw"
                 />
                 <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-red-600 text-white px-3 py-1 md:px-4 md:py-1.5 rounded-full text-[8px] md:text-xs font-black uppercase tracking-widest shadow-lg z-10">
                   Before
@@ -76,6 +77,7 @@ export function Gallery() {
                   alt="After"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 40vw, 25vw"
                 />
                 <div className="absolute top-2 right-2 md:top-4 md:right-4 bg-green-600 text-white px-3 py-1 md:px-4 md:py-1.5 rounded-full text-[8px] md:text-xs font-black uppercase tracking-widest shadow-lg z-10">
                   After
