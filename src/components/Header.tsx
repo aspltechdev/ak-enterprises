@@ -15,13 +15,16 @@ export function Header() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleNav = (sectionName: string, href: string) => {
-    if (pathname === "/") {
-      const element = document.querySelector(`.section-${sectionName}`);
+  const handleNav = (sectionName: string) => {
+    const isHomePage = pathname === "/";
+    const sectionClass = `.section-${sectionName}`;
+
+    if (isHomePage) {
+      const element = document.querySelector(sectionClass);
       if (element) {
         const headerOffset = 80;
         const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
         window.scrollTo({
           top: offsetPosition,
@@ -31,7 +34,9 @@ export function Header() {
         return;
       }
     }
-    router.push(href);
+
+    // Redirect to home with hash which will be handled by HashScrollHandler using classes
+    router.push(`/#${sectionName}`);
     setIsMenuOpen(false);
   };
 
@@ -56,7 +61,7 @@ export function Header() {
     >
       <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          <button onClick={() => handleNav("home", "/")} className="flex items-center gap-2 cursor-pointer">
+          <button onClick={() => handleNav("home")} className="flex items-center gap-2 cursor-pointer">
             <Image
               src="/assets/ak-enterprises-logo.png"
               alt="AK Enterprises Logo"
@@ -71,7 +76,7 @@ export function Header() {
           <ul className="hidden md:flex items-center gap-8">
             <li>
               <button
-                onClick={() => handleNav("home", "/")}
+                onClick={() => handleNav("home")}
                 className={`${pathname === "/" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors font-bold cursor-pointer`}
               >
                 Home
@@ -79,7 +84,7 @@ export function Header() {
             </li>
             <li>
               <button
-                onClick={() => handleNav("about", "/#about")}
+                onClick={() => handleNav("about")}
                 className={`${pathname === "/#about" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors font-bold cursor-pointer`}
               >
                 About
@@ -114,7 +119,7 @@ export function Header() {
 
             <li>
               <button
-                onClick={() => handleNav("blog", "/blog")}
+                onClick={() => handleNav("blog")}
                 className={`${pathname === "/blog" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors font-bold cursor-pointer`}
               >
                 Blog
@@ -122,7 +127,7 @@ export function Header() {
             </li>
             <li>
               <button
-                onClick={() => handleNav("contact", "/#contact")}
+                onClick={() => handleNav("contact")}
                 className={`${pathname === "/contact" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors font-bold cursor-pointer`}
               >
                 Contact
@@ -131,7 +136,7 @@ export function Header() {
           </ul>
 
           <button
-            onClick={() => handleNav("contact", "/#contact")}
+            onClick={() => handleNav("contact")}
             className="hidden md:block bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors font-bold cursor-pointer"
           >
             Get Quote
@@ -152,7 +157,7 @@ export function Header() {
             <ul className="flex flex-col gap-4">
               <li>
                 <button
-                  onClick={() => handleNav("home", "/")}
+                  onClick={() => handleNav("home")}
                   className={`${pathname === "/" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors block py-2 font-bold w-full text-left`}
                 >
                   Home
@@ -160,7 +165,7 @@ export function Header() {
               </li>
               <li>
                 <button
-                  onClick={() => handleNav("about", "/#about")}
+                  onClick={() => handleNav("about")}
                   className={`${pathname === "/#about" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors block py-2 font-bold w-full text-left`}
                 >
                   About
@@ -198,7 +203,7 @@ export function Header() {
 
               <li>
                 <button
-                  onClick={() => handleNav("blog", "/blog")}
+                  onClick={() => handleNav("blog")}
                   className={`${pathname === "/blog" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors block py-2 font-bold w-full text-left`}
                 >
                   Blog
@@ -206,7 +211,7 @@ export function Header() {
               </li>
               <li>
                 <button
-                  onClick={() => handleNav("contact", "/#contact")}
+                  onClick={() => handleNav("contact")}
                   className={`${pathname === "/contact" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors block py-2 font-bold w-full text-left`}
                 >
                   Contact
