@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="min-h-screen font-sans overflow-x-hidden w-full">
       <Header />
-      <main className="pt-[80px] md:pt-[100px]">
+      <main className="pt-[120px] md:pt-[160px]">
         <Hero />
 
         <ScrollReveal>
