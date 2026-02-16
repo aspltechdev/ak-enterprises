@@ -144,6 +144,12 @@ export function About() {
                   </h4>
 
                   {/* Green Button */}
+                  <div className="mt-auto w-full px-1 pb-1">
+                    <div className="bg-green-600 text-white py-3 px-6 rounded-xl font-bold text-sm uppercase tracking-widest flex items-center justify-center gap-2 group-hover:bg-green-700 transition-colors shadow-lg shadow-green-600/20">
+                      View Details
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
 
                 </div>
               </Link>

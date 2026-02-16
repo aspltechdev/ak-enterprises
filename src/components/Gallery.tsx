@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Gallery() {
   const images = [
     // Gallery Items
-    "/assets/gallery/aluminium scrap2.jfif.jpeg",
+
     "/assets/gallery/copper scrap2.jfif.jpeg",
     "/assets/gallery/copper-scrap.jpg.jpeg",
     "/assets/gallery/wire.jpg.jpeg",
@@ -30,7 +30,7 @@ export function Gallery() {
     "/assets/hvac scraps/hvac.jpg",
 
     // Metal Scrap
-    "/assets/metal scraps/metal.jpg",
+
     "/assets/metal scraps/metallandscao.jpeg",
     "/assets/metal scraps/copper.jpg",
     "/assets/metal scraps/aluminimumsubpage.jpeg",
