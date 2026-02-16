@@ -16,22 +16,15 @@ export function Footer() {
               height={60}
               className="h-12 w-auto object-contain mb-4 brightness-0 invert"
             />
-            <p className="text-green-100 text-xs mb-4 max-w-xs">
+            <p className="text-green-100 text-[10px] mb-4 max-w-xs">
               Leading provider of industrial solutions and scrap processing services since 2000.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors">
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors">
-                <Twitter className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors">
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors">
-                <Instagram className="w-4 h-4" />
-              </a>
+              <Link href="/about-us" className="text-green-100 hover:text-white transition-colors text-[10px] font-bold uppercase tracking-wider">About Us</Link>
+              <span className="text-green-500">|</span>
+              <Link href="/contact-us" className="text-green-100 hover:text-white transition-colors text-[10px] font-bold uppercase tracking-wider">Contact Us</Link>
+              <span className="text-green-500">|</span>
+              <Link href="/blog" className="text-green-100 hover:text-white transition-colors text-[10px] font-bold uppercase tracking-wider">Industry Blog</Link>
             </div>
           </div>
 

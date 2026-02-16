@@ -16,11 +16,19 @@ export function Header() {
   const pathname = usePathname();
 
   const handleNav = (sectionName: string) => {
-    const isHomePage = pathname === "/";
-    const sectionClass = `.section-${sectionName}`;
+    const routeMap: Record<string, string> = {
+      home: "/",
+      about: "/about-us",
+      blog: "/blog",
+      contact: "/contact-us",
+      faq: "/contact-us", // FAQ is on contact page
+      gallery: "/", // Gallery is on home page
+    };
 
-    if (isHomePage) {
-      const element = document.querySelector(sectionClass);
+    const targetPath = routeMap[sectionName] || "/";
+
+    if (pathname === "/" && targetPath === "/") {
+      const element = document.querySelector(`.section-${sectionName}`);
       if (element) {
         const headerOffset = 80;
         const elementPosition = element.getBoundingClientRect().top;
@@ -35,8 +43,7 @@ export function Header() {
       }
     }
 
-    // Redirect to home with hash which will be handled by HashScrollHandler using classes
-    router.push(`/#${sectionName}`);
+    router.push(targetPath);
     setIsMenuOpen(false);
   };
 
@@ -85,7 +92,7 @@ export function Header() {
             <li>
               <button
                 onClick={() => handleNav("about")}
-                className={`${pathname === "/#about" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors font-bold cursor-pointer`}
+                className={`${pathname === "/about-us" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors font-bold cursor-pointer`}
               >
                 About
               </button>
@@ -128,7 +135,7 @@ export function Header() {
             <li>
               <button
                 onClick={() => handleNav("contact")}
-                className={`${pathname === "/contact" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors font-bold cursor-pointer`}
+                className={`${pathname === "/contact-us" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors font-bold cursor-pointer`}
               >
                 Contact
               </button>
@@ -166,7 +173,7 @@ export function Header() {
               <li>
                 <button
                   onClick={() => handleNav("about")}
-                  className={`${pathname === "/#about" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors block py-2 font-bold w-full text-left`}
+                  className={`${pathname === "/about-us" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors block py-2 font-bold w-full text-left`}
                 >
                   About
                 </button>
@@ -212,7 +219,7 @@ export function Header() {
               <li>
                 <button
                   onClick={() => handleNav("contact")}
-                  className={`${pathname === "/contact" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors block py-2 font-bold w-full text-left`}
+                  className={`${pathname === "/contact-us" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors block py-2 font-bold w-full text-left`}
                 >
                   Contact
                 </button>

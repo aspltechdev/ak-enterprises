@@ -163,7 +163,7 @@ export default function BlogPage() {
                                             </div>
 
                                             <div className="mt-8 pt-6 border-t border-black/5">
-                                                <Link href="/#contact" className="inline-flex items-center gap-2 text-gray-900 font-black uppercase tracking-widest text-xs hover:text-green-600 transition-all group/btn">
+                                                <Link href="/contact-us" className="inline-flex items-center gap-2 text-gray-900 font-black uppercase tracking-widest text-xs hover:text-green-600 transition-all group/btn">
                                                     Enquire Now
                                                     <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                                                 </Link>
