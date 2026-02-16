@@ -18,21 +18,18 @@ export default function AboutUsPage() {
         <div className="min-h-screen font-sans overflow-x-hidden w-full bg-white">
             <Header />
             <main>
-                <AboutHero />
 
                 <About />
 
-                <MissionVision />
-
-                <div className="py-24 bg-white">
-                    <ScrollReveal>
-                        <Clients />
-                    </ScrollReveal>
+                <div className="py-24">
+                    <MissionVision />
                 </div>
 
-                <Certification />
+                <div className="py-24">
+                    <Certification />
+                </div>
 
-                <div className="bg-gray-50">
+                <div className="bg-gray-50 py-24">
                     <ScrollReveal>
                         <WhyChooseUs />
                     </ScrollReveal>
