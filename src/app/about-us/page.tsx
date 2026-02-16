@@ -17,7 +17,7 @@ export default function AboutUsPage() {
     return (
         <div className="min-h-screen font-sans overflow-x-hidden w-full bg-white">
             <Header />
-            <main className="pt-[120px] md:pt-[160px]">
+            <main className="pt-[100px] md:pt-[120px]">
 
                 <About />
 

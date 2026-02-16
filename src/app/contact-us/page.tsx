@@ -14,7 +14,7 @@ export default function ContactUsPage() {
     return (
         <div className="min-h-screen font-sans overflow-x-hidden w-full">
             <Header />
-            <main className="pt-[120px] md:pt-[160px]">
+            <main className="pt-[100px] md:pt-[120px]">
                 <ScrollReveal>
                     <Contact />
                 </ScrollReveal>
