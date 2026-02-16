@@ -97,15 +97,7 @@ export function About() {
                 </div>
               </div>
             </div>
-            <div className="mt-8 flex justify-center px-4 w-full">
-              <Link
-                href="/aboutus"
-                className="inline-flex items-center justify-center gap-2 bg-green-600 text-white w-full sm:w-auto px-10 py-4 md:py-4 rounded-full font-bold hover:bg-green-700 transition-all hover:shadow-lg group text-sm md:text-base mb-4 lg:mb-0"
-              >
-                Read More
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
+
             {/* Decorative background element */}
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-green-100 rounded-full -z-10 blur-3xl opacity-60"></div>
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-green-200 rounded-full -z-10 blur-3xl opacity-60"></div>
@@ -152,12 +144,7 @@ export function About() {
                   </h4>
 
                   {/* Green Button */}
-                  <div className="mt-auto w-full px-1 pb-1">
-                    <div className="bg-green-600 text-white py-3 px-6 rounded-xl font-bold text-sm uppercase tracking-widest flex items-center justify-center gap-2 group-hover:bg-green-700 transition-colors shadow-lg shadow-green-600/20">
-                      View Details
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </div>
+
                 </div>
               </Link>
             ))}

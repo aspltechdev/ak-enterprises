@@ -79,8 +79,8 @@ export function Header() {
             </li>
             <li>
               <button
-                onClick={() => handleNav("about", "/aboutus")}
-                className={`${pathname === "/aboutus" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors font-bold cursor-pointer`}
+                onClick={() => handleNav("about", "/#about")}
+                className={`${pathname === "/#about" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors font-bold cursor-pointer`}
               >
                 About
               </button>
@@ -160,8 +160,8 @@ export function Header() {
               </li>
               <li>
                 <button
-                  onClick={() => handleNav("about", "/aboutus")}
-                  className={`${pathname === "/aboutus" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors block py-2 font-bold w-full text-left`}
+                  onClick={() => handleNav("about", "/#about")}
+                  className={`${pathname === "/#about" ? "text-green-600" : "text-gray-700"} hover:text-green-600 transition-colors block py-2 font-bold w-full text-left`}
                 >
                   About
                 </button>
