@@ -51,6 +51,7 @@ export const metadata: Metadata = {
 
 import SmoothScroll from "@/components/SmoothScroll";
 import { FloatingContactButtons } from "@/components/FloatingContactButtons";
+import { HashScrollHandler } from "@/components/HashScrollHandler";
 
 export default function RootLayout({
   children,
@@ -62,6 +63,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <HashScrollHandler />
         <SmoothScroll>{children}</SmoothScroll>
         <FloatingContactButtons />
       </body>

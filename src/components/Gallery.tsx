@@ -44,7 +44,7 @@ export function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="py-24 bg-gray-50">
+    <section className="section-gallery py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-black text-gray-900 tracking-tight leading-none mb-6">

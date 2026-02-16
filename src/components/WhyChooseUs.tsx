@@ -25,7 +25,7 @@ export function WhyChooseUs() {
   ];
 
   return (
-    <section id="why-choose-us" className="pt-12 pb-24 bg-gray-50 overflow-hidden">
+    <section className="section-why-choose-us pt-12 pb-24 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.1]">Why Choose AK Enterprises for Large-Scale Scrap Management</h2>

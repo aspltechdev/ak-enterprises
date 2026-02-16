@@ -6,7 +6,7 @@ export function About() {
 
 
   return (
-    <section id="about" className="pt-20 pb-12 bg-white overflow-hidden">
+    <section className="section-about pt-20 pb-12 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Intro Section */}
         <div className="flex flex-col lg:flex-row gap-16 items-center mb-24">

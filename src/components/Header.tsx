@@ -15,9 +15,9 @@ export function Header() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleNav = (id: string, href: string) => {
+  const handleNav = (sectionName: string, href: string) => {
     if (pathname === "/") {
-      const element = document.getElementById(id);
+      const element = document.querySelector(`.section-${sectionName}`);
       if (element) {
         const headerOffset = 80;
         const elementPosition = element.getBoundingClientRect().top;

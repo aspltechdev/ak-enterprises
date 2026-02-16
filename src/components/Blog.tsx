@@ -46,7 +46,7 @@ export function Blog() {
   ];
 
   return (
-    <section id="blog" className="py-24 bg-white overflow-hidden">
+    <section className="section-blog py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-black text-gray-900 tracking-tight leading-none mb-6">
