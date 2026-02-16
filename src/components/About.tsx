@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { CheckCircle2, Target, Recycle, Factory, Wrench, ShieldCheck, ArrowRight } from "lucide-react";
 import Link from "next/link";

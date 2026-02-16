@@ -5,6 +5,8 @@ import { About } from "@/components/About";
 import { Certification } from "@/components/Certification";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { AboutHero, MissionVision } from "@/components/AboutUsRedesign";
+import { Clients } from "@/components/Clients";
 
 export const metadata: Metadata = {
     title: "About Us | AK Enterprises - Leading Industrial Scrap Solutions",
@@ -13,18 +15,28 @@ export const metadata: Metadata = {
 
 export default function AboutUsPage() {
     return (
-        <div className="min-h-screen font-sans overflow-x-hidden w-full">
+        <div className="min-h-screen font-sans overflow-x-hidden w-full bg-white">
             <Header />
-            <main className="pt-[80px] md:pt-[100px]">
-                <ScrollReveal>
-                    <About />
-                </ScrollReveal>
+            <main>
+                <AboutHero />
+
+                <About />
+
+                <MissionVision />
+
+                <div className="py-24 bg-white">
+                    <ScrollReveal>
+                        <Clients />
+                    </ScrollReveal>
+                </div>
 
                 <Certification />
 
-                <ScrollReveal>
-                    <WhyChooseUs />
-                </ScrollReveal>
+                <div className="bg-gray-50">
+                    <ScrollReveal>
+                        <WhyChooseUs />
+                    </ScrollReveal>
+                </div>
             </main>
             <Footer />
         </div>
