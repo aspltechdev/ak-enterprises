@@ -3,7 +3,7 @@ import Image from "next/image";
 export function ScrapProcessingBanner() {
     return (
         <section className="py-12 bg-white overflow-hidden">
-            <div className="container mx-auto px-4 max-w-7xl">
+            <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
                 {/* Image Container */}
                 <div className="relative w-full aspect-[21/9] md:aspect-[2/1] rounded-[2.5rem] overflow-hidden shadow-2xl mb-8 group">
                     <Image

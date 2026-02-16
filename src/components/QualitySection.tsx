@@ -37,7 +37,7 @@ export function QualitySection() {
 
   return (
     <section id="quality" className="py-12 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
         <div className="text-center mb-10 font-sans">
           <h2 className="text-4xl lg:text-5xl font-black text-green-600 uppercase mb-4">Our Commitment</h2>
           <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-6 uppercase tracking-wider">

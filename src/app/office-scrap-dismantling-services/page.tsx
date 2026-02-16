@@ -86,7 +86,7 @@ export default function OfficeScrapService() {
                         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-green-500/20 blur-[120px] rounded-full -mr-32 -mt-32"></div>
                     </div>
 
-                    <div className="container mx-auto px-4 relative z-10">
+                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
                         <div className="max-w-4xl text-left">
                             {/* Premium Badge */}
                             <motion.div
@@ -135,7 +135,7 @@ export default function OfficeScrapService() {
                         </svg>
                     </div>
 
-                    <div className="container mx-auto px-4 max-w-7xl relative z-10">
+                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
                         <div className="flex flex-col lg:flex-row gap-12 items-center">
                             {/* Left Column: Content */}
                             <div className="w-full lg:w-2/3">
@@ -186,7 +186,7 @@ export default function OfficeScrapService() {
 
                 {/* Professionalism Section */}
                 <section className="py-12 md:py-24 bg-gray-50 overflow-hidden">
-                    <div className="container mx-auto px-4">
+                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
                         <div className="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-20">
                             <div className="lg:w-1/2">
                                 <h2 className="text-green-600 font-extrabold uppercase tracking-tight mb-4 text-xl md:text-2xl lg:text-3xl">Office Scrap & Dismantling Services</h2>
@@ -217,7 +217,7 @@ export default function OfficeScrapService() {
 
                 {/* Services Checklist */}
                 <section className="py-12 md:py-24 bg-white">
-                    <div className="container mx-auto px-4">
+                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
                         <div className="text-center mb-10 md:mb-16">
                             <h2 className="text-green-600 font-extrabold uppercase mb-4 text-xl md:text-2xl lg:text-3xl text-center">Services we offer</h2>
                             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center">Our Office Scrap Services Include:</h3>
@@ -247,7 +247,7 @@ export default function OfficeScrapService() {
 
                 {/* Our Process */}
                 <section className="py-16 md:py-24 bg-white">
-                    <div className="container mx-auto px-4">
+                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
                         <div className="text-center mb-12 md:mb-16">
                             <h2 className="text-green-600 font-extrabold uppercase tracking-tight mb-4 text-xl md:text-2xl lg:text-3xl">Our Process</h2>
                             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">Simple & Efficient Scrap Removal Process</h3>
@@ -275,7 +275,7 @@ export default function OfficeScrapService() {
 
                 {/* Before & After Gallery */}
                 <section className="py-12 md:py-24 bg-gray-50">
-                    <div className="container mx-auto px-4">
+                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
                         <div className="text-center mb-10 md:mb-16">
                             <h2 className="text-green-600 font-extrabold uppercase mb-4 text-xl md:text-2xl lg:text-3xl">Work Gallery</h2>
                             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">Before & After Dismantling</h3>
@@ -319,7 +319,7 @@ export default function OfficeScrapService() {
 
                 {/* Call To Action Section */}
                 <section className="py-12 md:py-16 bg-white overflow-hidden relative">
-                    <div className="container mx-auto px-4 max-w-7xl relative z-10">
+                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
                         <div className="bg-green-600 rounded-3xl p-8 md:p-12 text-center text-white shadow-2xl relative overflow-hidden group">
                             {/* Decorative Background Elements */}
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 transition-transform duration-700 group-hover:scale-110"></div>

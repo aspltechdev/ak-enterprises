@@ -7,7 +7,7 @@ export function About() {
 
   return (
     <section id="about" className="pt-20 pb-12 bg-white overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
         {/* Intro Section */}
         <div className="flex flex-col lg:flex-row gap-16 items-center mb-24">
           <div className="lg:w-1/2">
@@ -119,7 +119,7 @@ export function About() {
           <div className="w-16 h-1 bg-green-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <div className="pb-12 px-4">
+        <div className="pb-12 px-6 md:px-12 lg:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1440px] mx-auto">
             {[
               { title: "Office Scrap & Dismantling", image: "/assets/office scrap and dismantaling/office-dismantling-service.jpg", href: "/office-scrap-dismantling-services" },

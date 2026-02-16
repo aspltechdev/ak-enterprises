@@ -47,17 +47,12 @@ export function Blog() {
 
   return (
     <section id="blog" className="py-24 bg-white overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-black text-gray-900 tracking-tight leading-none mb-6">
             Insights & <span className="text-green-600 italic font-serif">Stories</span>
           </h2>
           <p className="text-gray-500 text-xl font-medium mb-8 max-w-2xl mx-auto">Explore the latest insights, case studies, and industry news from AK Enterprises.</p>
-
-          <Link href="/blog" className="inline-flex items-center gap-2 text-green-600 font-bold uppercase tracking-widest text-sm border-b-2 border-green-600 pb-1 hover:text-green-700 hover:border-green-700 transition-all">
-            View All Posts
-            <ArrowRight className="w-4 h-4" />
-          </Link>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

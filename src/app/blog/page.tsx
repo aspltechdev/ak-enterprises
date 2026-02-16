@@ -90,7 +90,7 @@ export default function BlogPage() {
             <main className="pt-[80px] md:pt-[100px]">
                 {/* Hero Header */}
                 <section className="py-20 bg-green-700 text-white text-center relative overflow-hidden">
-                    <div className="container mx-auto px-4 relative z-10">
+                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
                         <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter uppercase">
                             Our Blog
                         </h1>
@@ -101,7 +101,7 @@ export default function BlogPage() {
                 </section>
 
                 <section className="py-24 bg-white">
-                    <div className="container mx-auto px-4">
+                    <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                             {blogs.map((blog, index) => {
                                 const bgColors = ["bg-[#E6F9E6]", "bg-[#E0F2FE]", "bg-[#FDF2F8]"];

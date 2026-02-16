@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, ChevronDown, MessageCircle } from "lucide-react";
 export function Contact() {
   return (
     <section id="contact" className="py-10 md:py-16 bg-white overflow-hidden">
-      <div className="container mx-auto px-4 max-w-[1400px]">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
         <div className="border-2 border-green-600 rounded-[2.5rem] p-6 md:p-10 lg:p-12 bg-white shadow-xl shadow-green-900/5">
           {/* Header - Compact */}
           <div className="text-center mb-8 md:mb-12">
