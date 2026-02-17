@@ -84,18 +84,18 @@ export default function WoodScrapService() {
 
             <main className="pt-[80px] md:pt-[100px]">
                 {/* Hero Section */}
-                <section className="relative min-h-[40vh] md:min-h-[60vh] flex items-end overflow-hidden bg-gray-900 pb-16 md:pb-28 pt-24">
+                <section className="relative min-h-[50vh] md:min-h-[75vh] flex items-end overflow-hidden bg-gray-900 pb-16 md:pb-28 pt-24">
                     {/* Background Layer */}
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="/assets/gallery/ak2.jpeg"
+                            src="/assets/wood/wood1.jpeg"
                             alt="Industrial Scrap Yard"
                             fill
-                            className="object-cover opacity-50 contrast-125"
+                            className="object-cover opacity-80 contrast-125"
                             priority
                         />
                         {/* Advanced Gradient Overlays */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/60 to-transparent"></div>
                         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
 
                         {/* Decorative Blur Element */}
@@ -183,7 +183,7 @@ export default function WoodScrapService() {
                             <div className="w-full lg:w-1/3">
                                 <div className="relative h-64 md:h-80 lg:h-[450px] w-full max-w-md mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white group">
                                     <Image
-                                        src="/assets/gallery/ak3.jpeg"
+                                        src="/assets/wood/wood2.jpeg"
                                         alt="Industrial Scraps"
                                         fill
                                         className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -215,7 +215,7 @@ export default function WoodScrapService() {
                             </div>
                             <div className="lg:w-1/2 relative h-64 sm:h-[400px] w-full rounded-[2rem] md:rounded-3xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/assets/gallery/ak4.jpeg"
+                                    src="/assets/wood/wood3.jpeg"
                                     alt="Professional Scrap Handling"
                                     fill
                                     className="object-cover"

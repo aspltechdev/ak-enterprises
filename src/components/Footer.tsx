@@ -47,15 +47,33 @@ export function Footer() {
             <ul className="space-y-3 text-xs text-green-100 italic">
               <li className="flex items-start gap-2 justify-center md:justify-start">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>No 33/2 , opp to Dmart , kodichikkanahalli , bengaluru urban - 560068 karnataka india</span>
+                <span>
+                  No 33/2, Opp to Dmart,<br />
+                  Kodichikkanahalli, Bengaluru Urban - 560068,<br />
+                  Karnataka, India
+                </span>
               </li>
               <li className="flex items-center gap-2 justify-center md:justify-start">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span>+91 9538438069</span>
+                <a href="tel:+919538438069" className="hover:text-white transition-all duration-300">+91 9538438069</a>
               </li>
               <li className="flex items-center gap-2 justify-center md:justify-start">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>info@akenterprises.com</span>
+                <a href="mailto:info@akenterprises.com" className="hover:text-white transition-all duration-300">info@akenterprises.com</a>
+              </li>
+              <li className="flex items-center gap-4 pt-2 justify-center md:justify-start">
+                <Link href="#" className="hover:text-white transition-colors bg-green-800 p-2 rounded-full">
+                  <Facebook className="w-4 h-4" />
+                </Link>
+                <Link href="#" className="hover:text-white transition-colors bg-green-800 p-2 rounded-full">
+                  <Instagram className="w-4 h-4" />
+                </Link>
+                <Link href="#" className="hover:text-white transition-colors bg-green-800 p-2 rounded-full">
+                  <Twitter className="w-4 h-4" />
+                </Link>
+                <Link href="#" className="hover:text-white transition-colors bg-green-800 p-2 rounded-full">
+                  <Linkedin className="w-4 h-4" />
+                </Link>
               </li>
             </ul>
           </div>

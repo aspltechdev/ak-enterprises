@@ -68,19 +68,19 @@ export default function OfficeScrapService() {
 
             <main className="pt-[80px] md:pt-[100px]">
                 {/* Hero Section */}
-                <section className="relative min-h-[40vh] md:min-h-[60vh] flex items-end overflow-hidden bg-gray-900 pb-16 md:pb-28 pt-24">
+                <section className="relative min-h-[50vh] md:min-h-[75vh] flex items-end overflow-hidden bg-gray-900 pb-16 md:pb-28 pt-24">
                     {/* Background Layer */}
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="/assets/office scrap and dismantaling/office-dismantling-service.jpg"
+                            src="/assets/office scrap and dismantaling/office-hero.jpeg"
                             alt="Large-Scale Office Dismantling"
                             fill
-                            className="object-cover opacity-50 contrast-125"
+                            className="object-cover opacity-80 contrast-125"
                             priority
                             sizes="100vw"
                         />
                         {/* Advanced Gradient Overlays */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/60 to-transparent"></div>
                         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
 
                         {/* Decorative Blur Element */}
@@ -277,8 +277,49 @@ export default function OfficeScrapService() {
                 {/* Industries We Serve */}
 
 
+                {/* Before & After Dismantling */}
+                <section className="py-16 md:py-24 bg-gray-50">
+                    <div className="container mx-auto px-4">
+                        <div className="text-center mb-10 md:mb-16">
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.1] mb-6">Before & After Dismantling</h2>
+                        </div>
+
+                        <div className="max-w-7xl mx-auto bg-white p-2 md:p-4 rounded-[2rem] md:rounded-[2.5rem] shadow-2xl overflow-hidden relative border-4 border-white">
+                            <div className="grid md:grid-cols-2 gap-0 relative rounded-[1.5rem] md:rounded-[2rem] overflow-hidden">
+                                <div className="relative h-[250px] md:h-[550px] overflow-hidden group">
+                                    <Image
+                                        src="/assets/office scrap and dismantaling/officeafter.jpeg"
+                                        alt="Before Dismantling"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                    />
+                                    <div className="absolute top-6 left-6 bg-red-600 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest text-sm shadow-lg z-10 border-2 border-white/20 backdrop-blur-sm">
+                                        Before
+                                    </div>
+                                    {/* Divider Line (Only Visible on Desktop) */}
+                                    <div className="hidden md:block absolute right-0 top-0 bottom-0 w-1 bg-white z-20"></div>
+                                </div>
+                                <div className="relative h-[250px] md:h-[550px] overflow-hidden group border-t-4 md:border-t-0 md:border-l-4 border-white">
+                                    <Image
+                                        src="/assets/office scrap and dismantaling/officebefore.jpeg"
+                                        alt="After Dismantling"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                    />
+                                    <div className="absolute top-6 right-6 bg-green-600 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest text-sm shadow-lg z-10 border-2 border-white/20 backdrop-blur-sm">
+                                        After
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
                 {/* Call To Action Section */}
-                <section className="py-12 md:py-16 bg-white overflow-hidden relative">
+                <section className="pt-12 md:pt-16 pb-4 md:pb-6 bg-white overflow-hidden relative">
                     <div className="container mx-auto px-4">
                         <div className="bg-green-600 rounded-3xl p-8 md:p-12 text-center text-white shadow-2xl relative overflow-hidden group">
                             {/* Decorative Background Elements */}

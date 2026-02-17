@@ -33,7 +33,7 @@ export function Gallery() {
 
     "/assets/metal scraps/metallandscao.jpeg",
     "/assets/metal scraps/copper.jpg",
-    "/assets/metal scraps/aluminimumsubpage.jpeg",
+
 
     // Mixed Scrap
     "/assets/mixed scrap/mixed.jpg.jpeg",
@@ -56,36 +56,7 @@ export function Gallery() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-          {/* Before & After Comparison Card */}
-          <div className="col-span-2 md:row-span-2 relative aspect-[2/1] md:aspect-square overflow-hidden rounded-xl bg-gray-200 group hover:shadow-xl transition-all duration-300 border border-gray-100">
-            <div className="grid grid-cols-2 h-full">
-              <div className="relative h-full border-r border-gray-100">
-                <Image
-                  src="/assets/office scrap and dismantaling/officebefore.jpeg"
-                  alt="Before"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 40vw, 25vw"
-                />
-                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-red-600 text-white px-3 py-1 md:px-4 md:py-1.5 rounded-full text-[8px] md:text-xs font-black uppercase tracking-widest shadow-lg z-10">
-                  Before
-                </div>
-              </div>
-              <div className="relative h-full">
-                <Image
-                  src="/assets/office scrap and dismantaling/officeafter1.jpeg"
-                  alt="After"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 40vw, 25vw"
-                />
-                <div className="absolute top-2 right-2 md:top-4 md:right-4 bg-green-600 text-white px-3 py-1 md:px-4 md:py-1.5 rounded-full text-[8px] md:text-xs font-black uppercase tracking-widest shadow-lg z-10">
-                  After
-                </div>
-              </div>
-            </div>
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
-          </div>
+
 
           {images.map((src, index) => (
             <div

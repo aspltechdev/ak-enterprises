@@ -41,7 +41,7 @@ export function About() {
               {/* Mobile Only Image: Appears after heading and first paragraph */}
               <div className="lg:hidden relative h-[300px] w-full rounded-3xl overflow-hidden shadow-2xl my-8">
                 <Image
-                  src="/assets/about/industrial.jpg"
+                  src="/assets/about/about1.jpeg"
                   alt="Industrial Mastery"
                   fill
                   className="object-cover"
@@ -84,7 +84,7 @@ export function About() {
                 className="absolute top-0 right-0 w-10/12 h-5/6 rounded-[3rem] overflow-hidden shadow-2xl z-10"
               >
                 <Image
-                  src="/assets/about/industrial.jpg"
+                  src="/assets/about/about2.jpeg"
                   alt="Industrial Mastery"
                   fill
                   className="object-cover hover:scale-110 transition-transform duration-1000"
@@ -101,7 +101,7 @@ export function About() {
                 className="absolute bottom-0 left-0 w-7/12 h-1/2 rounded-[2.5rem] overflow-hidden shadow-2xl z-20 border-8 border-white"
               >
                 <Image
-                  src="/assets/about/metal.jpg"
+                  src="/assets/about/about1.jpeg"
                   alt="Metal Recovery"
                   fill
                   className="object-cover hover:scale-110 transition-transform duration-1000"

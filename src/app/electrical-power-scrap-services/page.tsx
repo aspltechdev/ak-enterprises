@@ -84,18 +84,18 @@ export default function ElectricalPowerScrapService() {
 
             <main className="pt-[80px] md:pt-[100px]">
                 {/* Hero Section */}
-                <section className="relative min-h-[40vh] md:min-h-[60vh] flex items-end overflow-hidden bg-gray-900 pb-16 md:pb-28 pt-24">
+                <section className="relative min-h-[50vh] md:min-h-[75vh] flex items-end overflow-hidden bg-gray-900 pb-16 md:pb-28 pt-24">
                     {/* Background Layer */}
                     <div className="absolute inset-0 z-0 text-center">
                         <Image
                             src="/assets/electrical scraps/wirescrap.jpg"
                             alt="Electrical Scrap"
                             fill
-                            className="object-cover opacity-50 contrast-125"
+                            className="object-cover opacity-80 contrast-125"
                             priority
                         />
                         {/* Advanced Gradient Overlays */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/60 to-transparent"></div>
                         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
 
                         {/* Decorative Blur Element */}
