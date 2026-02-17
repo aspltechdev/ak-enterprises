@@ -50,7 +50,7 @@ export function Blog() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-black text-gray-900 tracking-tight leading-none mb-6">
-            Insights & <span className="text-green-600 italic font-serif">Stories</span>
+            Insights & <span className="text-green-600">Stories</span>
           </h2>
           <p className="text-gray-500 text-xl font-medium mb-8 max-w-2xl mx-auto">Explore the latest insights, case studies, and industry news from AK Enterprises.</p>
         </div>

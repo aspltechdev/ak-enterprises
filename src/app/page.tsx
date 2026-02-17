@@ -13,7 +13,7 @@ import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 import { Certification } from "@/components/Certification";
-import { Services } from "@/components/Services";
+
 
 export default function Home() {
   return (
@@ -26,9 +26,7 @@ export default function Home() {
           <About />
         </ScrollReveal>
 
-        <ScrollReveal>
-          <Services />
-        </ScrollReveal>
+
 
         {/* Infinite Carousel Section */}
         <Certification />

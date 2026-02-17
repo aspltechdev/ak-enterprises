@@ -14,27 +14,22 @@ export const metadata: Metadata = {
 export default function BlogPage() {
     const blogs = [
         {
+            title: "What Is Industrial & Large-Scale Scrap Management? A Complete Guide",
+            date: "February 17, 2026",
+            author: "Admin",
+            readTime: "8 min read",
+            image: "https://images.unsplash.com/photo-1751054720514-067105f538d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBlcXVpcG1lbnQlMjBjcmFuZXxlbnwxfHx8fDE3NzAxODkxMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+            excerpt: "Learn what industrial scrap management is, why bulk recycling matters for businesses, and the step-by-step process of large-scale scrap handling.",
+            href: "/blog/industrial-scrap-management"
+        },
+        {
             title: "Efficient Office Dismantling: A Comprehensive Guide",
             date: "February 5, 2026",
             author: "Admin",
             readTime: "6 min read",
             image: "/assets/office scrap and dismantaling/office.jpg",
             excerpt: "Office dismantling is more than just clearing out furniture; it is a systematic process that requires precision, safety, and environmental responsibility. At AK Enterprises, we specialize in Large-Scale office clearance projects that minimize downtime for businesses.",
-            content: (
-                <>
-                    <p className="mb-4">
-                        Office dismantling is more than just clearing out furniture; it is a systematic process that requires precision, safety, and environmental responsibility. At AK Enterprises, we specialize in Large-Scale office clearance projects that minimize downtime for businesses.
-                    </p>
-                    <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">Systematic Removal of Workstations</h3>
-                    <p className="mb-4">
-                        The core of any office dismantling project lies in the workstations. Our team handles the deconstruction of modular furniture, ensuring that every component—from metal frames to wooden panels—is categorized for proper recycling or disposal.
-                    </p>
-                    <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">E-Waste Management</h3>
-                    <p className="mb-4">
-                        Modern offices generate significant electronic waste. We ensure that old servers, computer towers, and cabling are handled according to e-waste regulations, preventing hazardous materials from reaching landfills while recovering valuable metals.
-                    </p>
-                </>
-            )
+            href: "/contact-us"
         },
         {
             title: "Industrial Scrap Valuation: How to Get the Best Market Rates",
@@ -43,21 +38,7 @@ export default function BlogPage() {
             readTime: "5 min read",
             image: "/assets/about/industrial.jpg",
             excerpt: "Determining the value of industrial scrap is a science that involves understanding material purity, market demand, and weight accuracy. For factories and manufacturing units, scrap is often a hidden asset that can be converted into significant working capital.",
-            content: (
-                <>
-                    <p className="mb-4">
-                        Determining the value of industrial scrap is a science that involves understanding material purity, market demand, and weight accuracy. For factories and manufacturing units, scrap is often a hidden asset that can be converted into significant working capital.
-                    </p>
-                    <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">Material Grading and Purity</h3>
-                    <p className="mb-4">
-                        Different metals have vastly different values. Brass, copper, and stainless steel are graded based on their purity. Our experts provide on-site evaluation to ensure your materials are categorized correctly, maximizing your return.
-                    </p>
-                    <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">Transparent Weighing Systems</h3>
-                    <p className="mb-4">
-                        Trust is built on accuracy. We use calibrated industrial scales and provide detailed documentation for every load cleared, ensuring complete transparency between our team and the client.
-                    </p>
-                </>
-            )
+            href: "/contact-us"
         },
         {
             title: "Safe HVAC Scrap Removal: Specialized Protocols for Big Units",
@@ -66,21 +47,7 @@ export default function BlogPage() {
             readTime: "7 min read",
             image: "/assets/hvac scraps/hvac.jpg",
             excerpt: "Dismantling centralized HVAC systems and industrial chillers is a high-risk task that requires specialized tools and expertise. It involves handling bulky machinery and potentially hazardous refrigerants.",
-            content: (
-                <>
-                    <p className="mb-4">
-                        Dismantling centralized HVAC systems and industrial chillers is a high-risk task that requires specialized tools and expertise. It involves handling bulky machinery and potentially hazardous refrigerants.
-                    </p>
-                    <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">Chiller and Cooling Tower Dismantling</h3>
-                    <p className="mb-4">
-                        Our team is trained in the phased deconstruction of cooling towers and heavy-duty chillers. We focus on recovering valuable copper coils and aluminum fins while ensuring the heavy steel structure is cleared safely.
-                    </p>
-                    <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">Compliance and Safety</h3>
-                    <p className="mb-4">
-                        Safety is our top priority. We follow strict safety protocols to prevent accidents during high-altitude pipe removal and heavy machinery lifting, providing businesses with a worry-free clearance experience.
-                    </p>
-                </>
-            )
+            href: "/contact-us"
         }
     ];
 
@@ -164,8 +131,8 @@ export default function BlogPage() {
                                             </div>
 
                                             <div className="mt-8 pt-6 border-t border-black/5">
-                                                <Link href="/contact-us" className="inline-flex items-center gap-2 text-gray-900 font-black uppercase tracking-widest text-xs hover:text-green-600 transition-all group/btn">
-                                                    Enquire Now
+                                                <Link href={blog.href} className="inline-flex items-center gap-2 text-gray-900 font-black uppercase tracking-widest text-xs hover:text-green-600 transition-all group/btn">
+                                                    {blog.href.startsWith("/blog") ? "Read Full Article" : "Enquire Now"}
                                                     <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                                                 </Link>
                                             </div>

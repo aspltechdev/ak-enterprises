@@ -33,8 +33,9 @@ export function FAQ() {
     <section className="section-faq py-24 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-green-600 font-semibold uppercase mb-4 tracking-widest">FAQ</h2>
-          <h3 className="text-4xl lg:text-5xl font-black mb-6 text-gray-900">Frequently Asked Questions</h3>
+          <h2 className="text-4xl lg:text-5xl font-black mb-6 text-gray-900 tracking-tight leading-tight">
+            Frequently Asked <span className="text-green-600">Questions</span>
+          </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">Find answers to common questions about our scrap management and recycling services.</p>
         </div>
 

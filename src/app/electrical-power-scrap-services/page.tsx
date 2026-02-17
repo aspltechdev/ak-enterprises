@@ -93,6 +93,7 @@ export default function ElectricalPowerScrapService() {
                             fill
                             className="object-cover opacity-80 contrast-125"
                             priority
+                            sizes="100vw"
                         />
                         {/* Advanced Gradient Overlays */}
                         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/60 to-transparent"></div>
@@ -190,6 +191,7 @@ export default function ElectricalPowerScrapService() {
                                         fill
                                         className="object-cover group-hover:scale-110 transition-transform duration-700"
                                         priority
+                                        sizes="(max-width: 768px) 100vw, 33vw"
                                     />
                                     <div className="absolute inset-0 bg-green-600/5 hover:bg-transparent transition-colors"></div>
                                 </div>
@@ -217,11 +219,12 @@ export default function ElectricalPowerScrapService() {
                             </div>
                             <div className="lg:w-1/2 relative h-64 sm:h-[400px] w-full rounded-[2rem] md:rounded-3xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/assets/electrical scraps/generator.jpeg"
-                                    alt="Professional Generator and Power Scrap Handling"
+                                    src="/assets/electrical scraps/generator1.jpeg"
+                                    alt="Large-Scale Electrical Scrap Handling"
                                     fill
                                     className="object-cover"
                                     priority
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                 />
                             </div>
                         </div>

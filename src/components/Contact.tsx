@@ -50,8 +50,8 @@ export function Contact() {
         <div className="border-2 border-green-600 rounded-[2.5rem] p-6 md:p-10 lg:p-12 bg-white shadow-xl shadow-green-900/5">
           {/* Header - Compact */}
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-3xl md:text-5xl font-serif text-green-700 font-bold mb-2">
-              Contact Us
+            <h2 className="text-3xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight mb-2">
+              Contact <span className="text-green-600 font-serif italic">Us</span>
             </h2>
             <div className="w-32 h-1 bg-green-500 mx-auto rounded-full"></div>
           </div>
@@ -178,8 +178,8 @@ export function Contact() {
                     type="submit"
                     disabled={status === "loading"}
                     className={`w-full sm:w-auto px-10 py-3 rounded-lg font-black uppercase tracking-widest text-sm transition-all shadow-md active:scale-95 flex items-center justify-center gap-3 ${status === "loading"
-                        ? "bg-gray-400 cursor-not-allowed"
-                        : "bg-green-700 hover:bg-green-800 text-white"
+                      ? "bg-gray-400 cursor-not-allowed"
+                      : "bg-green-700 hover:bg-green-800 text-white"
                       }`}
                   >
                     {status === "loading" ? (

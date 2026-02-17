@@ -23,15 +23,14 @@ export function Hero() {
     <section className="section-home relative py-8 bg-white overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-5xl mx-auto mb-8">
-          {/* Headline to match the "Your Waste Our Business" style */}
+          {/* Headline to match the premium style */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-2xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-tight mb-3"
+            className="text-2xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-tight mb-3"
           >
-            Large-Scale <span className="text-green-600">Office Scrap,</span><br />
-            Dismantling & Reinstatement
+            Leading in <span className="text-green-600">Large-Scale</span> Scrap Buying & Dismantling
           </motion.h1>
 
           {/* Underline Separator */}
@@ -74,7 +73,7 @@ export function Hero() {
           ))}
         </motion.div>
 
-        {/* Floating Stats Strip (Optional but keeps user content) */}
+        {/* Floating Stats Strip */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -25,8 +25,8 @@ export function Clients() {
   return (
     <section className="section-clients py-16 bg-white overflow-hidden">
       <div className="container mx-auto px-4 mb-12 text-center">
-        <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
-          Trusted by <span className="text-green-600 font-bold">Industry Leaders</span>
+        <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+          Trusted by <span className="text-green-600">Industry Leaders</span>
         </h2>
         <div className="w-24 h-1.5 bg-green-600 mx-auto rounded-full"></div>
       </div>

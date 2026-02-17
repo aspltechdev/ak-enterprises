@@ -9,14 +9,14 @@ export function Testimonials() {
       rating: 5
     },
     {
-      name: "Administration Head",
+      name: "Facilities Management Team",
       company: "Mphasis",
       text: "We engaged AK Enterprises for our office dismantling and e-waste disposal. Their adherence to environmental compliance and secure handling of assets was impressive.",
       rating: 5
     },
     {
-      name: "Operations Lead",
-      company: "AXA Business Services",
+      name: "Facilities Management Team",
+      company: "Tangoe",
       text: "A reliable partner for corporate scrap management. They provided transparent valuation and seamless execution for our facility upgrades. Highly recommended for bulk projects.",
       rating: 5
     }
@@ -33,7 +33,7 @@ export function Testimonials() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-tight mb-6">
-            Client <span className="text-green-600 italic font-serif">Success Stories</span>
+            Client <span className="text-green-600">Success Stories</span>
           </h2>
 
         </div>

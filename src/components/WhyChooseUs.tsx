@@ -28,7 +28,9 @@ export function WhyChooseUs() {
     <section className="section-why-choose-us pt-12 pb-24 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.1]">Why Choose AK Enterprises for Large-Scale Scrap Management</h2>
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] tracking-tight">
+            Why Choose AK <span className="text-green-600">Enterprises?</span>
+          </h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
