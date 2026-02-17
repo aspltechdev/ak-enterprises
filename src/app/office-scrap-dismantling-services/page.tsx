@@ -289,7 +289,7 @@ export default function OfficeScrapService() {
                             <div className="grid md:grid-cols-2 gap-0 relative rounded-[1.5rem] md:rounded-[2rem] overflow-hidden">
                                 <div className="relative h-[250px] md:h-[550px] overflow-hidden group">
                                     <Image
-                                        src="/assets/office scrap and dismantaling/officeafter.jpeg"
+                                        src="/assets/office scrap and dismantaling/officebef.jpeg"
                                         alt="Before Dismantling"
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -303,7 +303,7 @@ export default function OfficeScrapService() {
                                 </div>
                                 <div className="relative h-[250px] md:h-[550px] overflow-hidden group border-t-4 md:border-t-0 md:border-l-4 border-white">
                                     <Image
-                                        src="/assets/office scrap and dismantaling/officebefore.jpeg"
+                                        src="/assets/office scrap and dismantaling/officeafter.jpeg"
                                         alt="After Dismantling"
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
