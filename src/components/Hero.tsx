@@ -30,7 +30,7 @@ export function Hero() {
             transition={{ duration: 0.8 }}
             className="text-2xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-tight mb-3"
           >
-            Leading in <span className="text-green-600">Large-Scale</span> Scrap Buying & Dismantling
+            <span className="text-green-600">Large-Scale</span> Office Scrap, <span className="text-green-600">Dismantling & Reinstatement</span> works
           </motion.h1>
 
           {/* Underline Separator */}

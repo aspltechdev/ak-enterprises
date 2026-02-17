@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://akenterprises.com'),
+  metadataBase: new URL('https://akenterprisesblr.com'),
   title: "AK Enterprises | Leading Industrial & scrap Processing Solutions",
   description: "AK Enterprises provides world-class industrial solutions, scrap processing, and metal recovery services. With over 20 years of experience, we deliver excellence and sustainable practices.",
   keywords: ["industrial solutions", "scrap processing", "metal recovery", "recycling", "AK Enterprises", "manufacturing"],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AK Enterprises | Leading Industrial Solutions",
     description: "Your trusted partner for industrial scrap processing and sustainable recycling solutions.",
-    url: "https://akenterprises.com",
+    url: "https://akenterprisesblr.com",
     siteName: "AK Enterprises",
     images: [
       {
