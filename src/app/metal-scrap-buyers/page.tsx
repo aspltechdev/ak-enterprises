@@ -182,6 +182,7 @@ export default function MetalScrapService() {
                                         fill
                                         className="object-cover"
                                         priority
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                     />
                                     <div className="absolute inset-0 bg-green-600/5 hover:bg-transparent transition-colors"></div>
                                 </div>
@@ -214,6 +215,7 @@ export default function MetalScrapService() {
                                     fill
                                     className="object-cover"
                                     priority
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                                 />
                             </div>
                         </div>

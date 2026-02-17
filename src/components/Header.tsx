@@ -23,6 +23,7 @@ export function Header() {
       contact: "/contact-us",
       faq: "/contact-us", // FAQ is on contact page
       gallery: "/", // Gallery is on home page
+      services: "/", // Services is on home page
     };
 
     const targetPath = routeMap[sectionName] || "/";

@@ -72,11 +72,12 @@ export default function OfficeScrapService() {
                     {/* Background Layer */}
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="/assets/office scrap and dismantaling/office-hero.jpeg"
+                            src="/assets/office scrap and dismantaling/office hero.jpeg"
                             alt="Large-Scale Office Dismantling"
                             fill
                             className="object-cover opacity-80 contrast-125"
                             priority
+                            loading="eager"
                             sizes="100vw"
                         />
                         {/* Advanced Gradient Overlays */}

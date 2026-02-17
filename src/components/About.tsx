@@ -12,7 +12,7 @@ export function About() {
     <section className="section-about pt-20 pb-12 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Premium Redesigned Intro Section */}
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-stretch mb-32">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-stretch mb-16 md:mb-32">
           {/* Left Column: Content & Statistics */}
           <div className="lg:w-5/12 flex flex-col justify-center">
             <div className="relative mb-12">
@@ -130,7 +130,7 @@ export function About() {
 
 
         {/* Core Values Section */}
-        <div className="mb-32">
+        <div className="mb-16 md:mb-32">
           <div className="text-center mb-16">
             <h3 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">Our Core <span className="text-green-600 font-serif italic">Values</span></h3>
             <div className="w-20 h-1.5 bg-green-600 mx-auto rounded-full"></div>
