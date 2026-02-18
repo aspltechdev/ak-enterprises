@@ -84,7 +84,7 @@ export function Contact() {
                     </div>
                     <div className="flex flex-col">
                       <span className="text-xs font-semibold text-green-600 uppercase tracking-widest">WhatsApp</span>
-                      <a href="https://wa.me/919538438069" target="_blank" rel="noopener noreferrer" className="text-base md:text-lg font-bold text-gray-800 hover:text-green-600 transition-colors">+91 9538438069</a>
+                      <a href="https://wa.me/919986732481" target="_blank" rel="noopener noreferrer" className="text-base md:text-lg font-bold text-gray-800 hover:text-green-600 transition-colors">+91 99867 32481</a>
                     </div>
                   </div>
 

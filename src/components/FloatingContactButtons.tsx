@@ -5,7 +5,7 @@ import { Phone } from "lucide-react";
 
 export function FloatingContactButtons() {
     const phoneNumber = "+919538438069"; // Call number
-    const whatsappNumber = "919538438069"; // Corrected WhatsApp number
+    const whatsappNumber = "919986732481"; // Corrected WhatsApp number
     const message = "Hi! I'm interested in your services.";
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
