@@ -83,6 +83,7 @@ export default function BlogPage() {
                                                 src={blog.image}
                                                 alt={blog.title}
                                                 fill
+                                                priority={index <= 2}
                                                 className="object-cover grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700"
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                             />

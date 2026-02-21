@@ -65,6 +65,7 @@ export function Blog() {
                     src={post.image}
                     alt={post.title}
                     fill
+                    priority={index <= 2}
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />

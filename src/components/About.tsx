@@ -61,18 +61,18 @@ export function About() {
           <div className="lg:w-1/2 relative overflow-hidden lg:overflow-visible w-full px-2 lg:px-0">
             <div className="grid grid-cols-2 gap-3 md:gap-4 max-w-lg mx-auto lg:max-w-none">
               <div className="space-y-3 md:space-y-4">
-                <div className="relative h-40 md:h-64 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                <div className="relative h-40 md:h-64 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 bg-gray-50">
                   <Image
-                    src="/assets/about/about1.jpeg"
-                    alt="Scrap recycling"
+                    src="/assets/gallery/box2_new.jpeg"
+                    alt="Box scrap 1"
                     fill
-                    className="object-cover"
+                    className="object-contain object-center"
                     sizes="(max-width: 768px) 50vw, 25vw"
                   />
                 </div>
                 <div className="relative h-32 md:h-48 rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-500">
                   <Image
-                    src="/assets/about/office service.jfif.jpeg"
+                    src="/assets/office scrap and dismantaling/officebef_new.jpeg"
                     alt="ISO Certification"
                     fill
                     className="object-cover"
@@ -97,6 +97,7 @@ export function About() {
                     src="/assets/about/about2.jpeg"
                     alt="Industrial Crane"
                     fill
+                    priority
                     className="object-cover"
                     sizes="(max-width: 768px) 50vw, 25vw"
                   />
@@ -130,11 +131,11 @@ export function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1440px] mx-auto">
             {[
               { title: "Office Scrap & Dismantling", image: "/assets/office scrap and dismantaling/office-dismantling-service.jpg", href: "/office-scrap-dismantling-services" },
-              { title: "Electrical & Power Scrap", image: "/assets/electrical scraps/wirescrap.jpg", href: "/electrical-power-scrap-services" },
+              { title: "Electrical & Power Scrap", image: "/assets/gallery/battery_new.jpeg", href: "/electrical-power-scrap-services" },
               { title: "HVAC Scrap", image: "/assets/hvac scraps/hvac.jpg", href: "/hvac-scrap-services" },
               { title: "Metal Scrap (Ferrous & Non-Ferrous)", image: "/assets/metal scraps/metal.jpg", href: "/metal-scrap-buyers" },
               { title: "Industrial & Mixed Scrap", image: "/assets/mixed scrap/mixed.jpg.jpeg", href: "/industrial-mixed-scrap-buyers" },
-              { title: "Wood Scrap", image: "/assets/wood/wood1.jpeg", href: "/wood-scrap-buyers" }
+              { title: "Office Wooden Scrap", image: "/assets/homepage/woodofficescrap.webp", href: "/wood-scrap-buyers" }
             ].map((service, index) => (
               <Link
                 key={index}

@@ -6,16 +6,16 @@ import Image from "next/image";
 export function Hero() {
   const heroImages = [
     {
-      src: "/assets/homepage/home.jpg",
+      src: "/assets/about/about1_new.jpeg",
       alt: "Office Dismantling Work",
+    },
+    {
+      src: "/assets/homepage/home2nd.jpeg",
+      alt: "Industrial Scrap Lifting",
     },
     {
       src: "/assets/homepage/office4.jpeg",
       alt: "E-Waste & Scrap Management",
-    },
-    {
-      src: "/assets/homepage/home2.jpg",
-      alt: "Industrial Scrap Lifting",
     },
   ];
 

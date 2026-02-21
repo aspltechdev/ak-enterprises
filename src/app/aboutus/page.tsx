@@ -60,7 +60,7 @@ export default function AboutPage() {
                             <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4 mt-6 lg:mt-0">
                                 <div className="relative h-40 md:h-64 rounded-2xl overflow-hidden shadow-xl">
                                     <Image
-                                        src="/assets/about/industrial.jpg"
+                                        src="/assets/about/about1_new.jpeg"
                                         alt="Industrial Facility"
                                         fill
                                         className="object-cover"
