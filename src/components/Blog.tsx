@@ -18,7 +18,7 @@ export function Blog() {
       )
     },
     {
-      image: "/assets/about/industrial.jpg",
+      image: "/assets/metal scraps/metal.jpg",
       title: "Industrial Scrap Valuation",
       excerpt: "The foundational knowledge and skills to leverage industrial scrap for any type of large project.",
       bgColor: "bg-[#E0F2FE]", // Light Blue
