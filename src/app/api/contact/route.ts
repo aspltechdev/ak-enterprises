@@ -13,6 +13,15 @@ export async function POST(req: Request) {
             );
         }
 
+        // Check if environment variables are set
+        if (!process.env.ZOHO_EMAIL || !process.env.ZOHO_PASSWORD) {
+            console.error("Missing ZOHO_EMAIL or ZOHO_PASSWORD environment variables");
+            return NextResponse.json(
+                { success: false, error: "Email configuration error. Please contact support." },
+                { status: 500 }
+            );
+        }
+
         // Configure Nodemailer with Zoho SMTP
         const transporter = nodemailer.createTransport({
             host: "smtp.zoho.in",
