@@ -135,7 +135,7 @@ export function About() {
               { title: "HVAC Scrap", image: "/assets/hvac scraps/hvac.jpg", href: "/hvac-scrap-services" },
               { title: "Metal Scrap (Ferrous & Non-Ferrous)", image: "/assets/metal scraps/metal.jpg", href: "/metal-scrap-buyers" },
               { title: "Industrial & Mixed Scrap", image: "/assets/mixed scrap/mixed.jpg.jpeg", href: "/industrial-mixed-scrap-buyers" },
-              { title: "Office Wooden Scrap", image: "/assets/homepage/woodofficescrap.webp", href: "/wood-scrap-buyers" }
+              // { title: "Office Wooden Scrap", image: "/assets/homepage/woodofficescrap.webp", href: "/wood-scrap-buyers" }
             ].map((service, index) => (
               <Link
                 key={index}
