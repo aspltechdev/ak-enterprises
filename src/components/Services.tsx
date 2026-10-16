@@ -47,14 +47,14 @@ export function Services() {
             icon: Layers,
             color: "from-purple-400 to-purple-600"
         },
-        {
-            title: "Wood Scrap Buyers",
-            description: "Large-scale collection of industrial pallets, timber waste, and wooden construction scrap.",
-            image: "/assets/wood/wood1.jpeg",
-            href: "/wood-scrap-buyers",
-            icon: Wind,
-            color: "from-emerald-400 to-emerald-600"
-        }
+        // {
+        //     title: "Wood Scrap Buyers",
+        //     description: "Large-scale collection of industrial pallets, timber waste, and wooden construction scrap.",
+        //     image: "/assets/wood/wood1.jpeg",
+        //     href: "/wood-scrap-buyers",
+        //     icon: Wind,
+        //     color: "from-emerald-400 to-emerald-600"
+        // }
     ];
 
     return (
