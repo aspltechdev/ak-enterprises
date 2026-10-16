@@ -54,7 +54,7 @@ export function Header() {
     { title: "HVAC Scrap", href: "/hvac-scrap-services" },
     { title: "Metal Scrap (Ferrous & Non-Ferrous)", href: "/metal-scrap-buyers" },
     { title: "Industrial & Mixed Scrap", href: "/industrial-mixed-scrap-buyers" },
-    { title: "Wood Scrap", href: "/wood-scrap-buyers" },
+    // { title: "Wood Scrap", href: "/wood-scrap-buyers" },
   ];
 
   const isServiceActive = services.some(s => pathname === s.href);
